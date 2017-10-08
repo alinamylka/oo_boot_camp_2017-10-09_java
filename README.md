@@ -1,19 +1,22 @@
 # oo_boot_camp_2017-10-09_java
-Copyright 2015-17 by Fred George. May be copied with this notice, but not used in classroom training.
+Copyright (c) 2016 by Fred George
+May be used freely except for training; license required for training.
 
 OO Boot Camp in Java for client on 9-13 October 2017
 
 Java is the most difficult to setup since there is a broad variety of Java
 development tools (and versions). The following instructions are for installing
-the code in IntelliJ 2016 by JetBrains. Adapt as necessary for your environment.
+the code in IntelliJ 2017 by JetBrains. Adapt as necessary for your environment.
 
 ## IntelliJ setup
-Import the sample code:
-- Choose "Import Project"
-- Select the pom.xml file (Maven import)
-- Accept all the defaults in subsequent dialog boxes
+Open the reference code:
+- Download the source code from github.com/fredgeorge
+  - Clone, or pull and extract the zip
+- Open IntelliJ
+- Choose "Open"
+- Navigate to the reference code root, and enter
 
-Now tag the source and test directories:
+Source and test directories should already be tagged as such:
     - File/Project Structure...
     - Select "Modules"
         -- Tag src directory as Sources

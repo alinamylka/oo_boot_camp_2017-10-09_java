@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2016 by Fred George
+ * Copyright (c) 2017 by Fred George
  * May be used freely except for training; license required for training.
  */
 

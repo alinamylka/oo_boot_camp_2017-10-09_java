@@ -41,6 +41,7 @@ public class TestChance {
     @Test
     public void hash() {
         assertEquals(LIKELY.hashCode(), new Chance(0.75).hashCode());
+        assertEquals(new Chance(0.3).hashCode(), new Chance(0.7).not().hashCode());
     }
 
     @Test
@@ -49,7 +50,7 @@ public class TestChance {
         assertEquals(LIKELY, LIKELY.not().not());
         assertEquals(CERTAIN, IMPOSSIBLE.not());
         assertEquals(EQUALLY_LIKELY, EQUALLY_LIKELY.not());
+        assertEquals(new Chance(0.3), new Chance(0.7).not());
     }
-
 
 }

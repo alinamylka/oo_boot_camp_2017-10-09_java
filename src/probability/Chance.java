@@ -5,10 +5,13 @@
 
 package probability;
 
+import java.util.Objects;
+
 // Understands the likelihood of something specific happening
 public class Chance {
 
     private final static double CERTAIN_FRACTION = 1.0;
+    private final static double TOLERANCE = 0.0000001;
 
     private final double fraction;
 
@@ -24,12 +27,12 @@ public class Chance {
     }
 
     private boolean equals(Chance other) {
-        return Double.compare(this.fraction, other.fraction) == 0;
+        return Math.abs(this.fraction - other.fraction) < TOLERANCE;
     }
 
     @Override
     public int hashCode() {
-        return new Double(fraction).hashCode();
+        return Objects.hash(Math.round(fraction * 100000d) / 100000d);
     }
 
     public Chance not() {

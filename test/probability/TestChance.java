@@ -71,4 +71,10 @@ public class TestChance {
         assertEquals(CERTAIN, CERTAIN.or(LIKELY));
     }
 
+    @Test
+    public void validParameters() {
+        assertThrows(IllegalArgumentException.class, () -> { new Chance(1.1); });
+        assertThrows(IllegalArgumentException.class, () -> { new Chance(-0.1); });
+    }
+
 }

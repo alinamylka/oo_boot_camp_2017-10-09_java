@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/probability/Chance.java" afterPath="$PROJECT_DIR$/src/probability/Chance.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/probability/TestChance.java" afterPath="$PROJECT_DIR$/test/probability/TestChance.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,10 +20,10 @@
           <file leaf-file-name="TestChance.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/probability/TestChance.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+                <state relative-caret-position="613">
+                  <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
                   <folding>
-                    <element signature="e#0#1303#0" expanded="true" />
+                    <element signature="e#0#1549#0" expanded="true" />
                     <element signature="imports" expanded="true" />
                     <element signature="e#1221#1222#0" expanded="true" />
                     <element signature="e#1297#1298#0" expanded="true" />
@@ -38,16 +39,18 @@
           <file leaf-file-name="Chance.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+                <state relative-caret-position="170">
+                  <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
                   <folding>
-                    <element signature="e#0#800#0" expanded="true" />
-                    <element signature="e#309#310#0" expanded="true" />
-                    <element signature="e#356#357#0" expanded="true" />
-                    <element signature="e#626#627#0" expanded="true" />
-                    <element signature="e#699#700#0" expanded="true" />
-                    <element signature="e#742#743#0" expanded="true" />
-                    <element signature="e#796#797#0" expanded="true" />
+                    <element signature="e#0#946#0" expanded="true" />
+                    <element signature="e#366#367#0" expanded="true" />
+                    <element signature="e#413#414#0" expanded="true" />
+                    <element signature="e#683#684#0" expanded="true" />
+                    <element signature="e#756#757#0" expanded="true" />
+                    <element signature="e#799#800#0" expanded="true" />
+                    <element signature="e#853#854#0" expanded="true" />
+                    <element signature="e#880#881#0" expanded="true" />
+                    <element signature="e#942#943#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -67,9 +70,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>new Chance(0.75)</find>
+      <find>Likely</find>
     </findStrings>
     <replaceStrings>
       <replace>Likely</replace>
+      <replace>LIKELY</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -81,8 +86,8 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/rectangle/Rectangle.java" />
         <option value="$PROJECT_DIR$/test/rectangle/RectangleTest.java" />
-        <option value="$PROJECT_DIR$/src/probability/Chance.java" />
         <option value="$PROJECT_DIR$/test/probability/TestChance.java" />
+        <option value="$PROJECT_DIR$/src/probability/Chance.java" />
       </list>
     </option>
   </component>
@@ -349,6 +354,9 @@
     <history-entry file="TestChance - 2017.10.09 at 14h 14m 21s.xml">
       <configuration name="TestChance" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestChance - 2017.10.09 at 14h 16m 47s.xml">
+      <configuration name="TestChance" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="TestRectangle - 2017.10.09 at 11h 28m 41s.xml">
       <configuration name="TestRectangle" configurationId="JUnit" />
     </history-entry>
@@ -548,31 +556,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
+    <entry file="file://$PROJECT_DIR$/test/probability/TestChance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        <state relative-caret-position="613">
+          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
           <folding>
-            <element signature="e#0#800#0" expanded="true" />
-            <element signature="e#309#310#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-            <element signature="e#626#627#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-            <element signature="e#742#743#0" expanded="true" />
-            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#0#1549#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/probability/TestChance.java">
+    <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="42" column="27" lean-forward="false" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+        <state relative-caret-position="170">
+          <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
-            <element signature="e#0#1303#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1221#1222#0" expanded="true" />
-            <element signature="e#1297#1298#0" expanded="true" />
+            <element signature="e#0#946#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#413#414#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#756#757#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#853#854#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
           </folding>
         </state>
       </provider>

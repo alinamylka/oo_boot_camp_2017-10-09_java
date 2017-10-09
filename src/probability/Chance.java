@@ -38,4 +38,8 @@ public class Chance {
     public Chance not() {
         return new Chance(CERTAIN_FRACTION - fraction);
     }
+
+    public Chance and(Chance other) {
+        return new Chance(this.fraction * other.fraction);
+    }
 }

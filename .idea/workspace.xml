@@ -20,10 +20,10 @@
           <file leaf-file-name="TestChance.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/probability/TestChance.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="205">
-                  <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+                <state relative-caret-position="681">
+                  <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
                   <folding>
-                    <element signature="e#0#1694#0" expanded="true" />
+                    <element signature="e#0#2042#0" expanded="true" />
                     <element signature="imports" expanded="true" />
                   </folding>
                 </state>
@@ -37,10 +37,10 @@
           <file leaf-file-name="Chance.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="494">
-                  <caret line="34" column="68" lean-forward="false" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+                <state relative-caret-position="647">
+                  <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
                   <folding>
-                    <element signature="e#0#1053#0" expanded="true" />
+                    <element signature="e#0#1157#0" expanded="true" />
                     <element signature="e#448#449#0" expanded="true" />
                     <element signature="e#495#496#0" expanded="true" />
                     <element signature="e#765#766#0" expanded="true" />
@@ -49,6 +49,8 @@
                     <element signature="e#960#961#0" expanded="true" />
                     <element signature="e#987#988#0" expanded="true" />
                     <element signature="e#1049#1050#0" expanded="true" />
+                    <element signature="e#1088#1089#0" expanded="true" />
+                    <element signature="e#1153#1154#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -355,9 +357,6 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestChance - 2017.10.09 at 12h 09m 28s.xml">
-      <configuration name="TestChance" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestChance - 2017.10.09 at 12h 12m 59s.xml">
       <configuration name="TestChance" configurationId="JUnit" />
     </history-entry>
@@ -380,6 +379,9 @@
       <configuration name="TestChance" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestChance - 2017.10.09 at 14h 57m 17s.xml">
+      <configuration name="TestChance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestChance - 2017.10.09 at 14h 59m 17s.xml">
       <configuration name="TestChance" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestChance_not - 2017.10.09 at 14h 51m 35s.xml">
@@ -583,10 +585,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/probability/TestChance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="43" column="70" lean-forward="false" selection-start-line="43" selection-start-column="70" selection-end-line="43" selection-end-column="70" />
+        <state relative-caret-position="681">
+          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
           <folding>
-            <element signature="e#0#1694#0" expanded="true" />
+            <element signature="e#0#2042#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -594,10 +596,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="34" column="68" lean-forward="false" selection-start-line="34" selection-start-column="68" selection-end-line="34" selection-end-column="68" />
+        <state relative-caret-position="647">
+          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
           <folding>
-            <element signature="e#0#1053#0" expanded="true" />
+            <element signature="e#0#1157#0" expanded="true" />
             <element signature="e#448#449#0" expanded="true" />
             <element signature="e#495#496#0" expanded="true" />
             <element signature="e#765#766#0" expanded="true" />
@@ -606,6 +608,8 @@
             <element signature="e#960#961#0" expanded="true" />
             <element signature="e#987#988#0" expanded="true" />
             <element signature="e#1049#1050#0" expanded="true" />
+            <element signature="e#1088#1089#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
           </folding>
         </state>
       </provider>

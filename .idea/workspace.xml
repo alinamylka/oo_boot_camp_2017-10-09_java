@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/probability/Chance.java" afterPath="$PROJECT_DIR$/src/probability/Chance.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/probability/TestChance.java" afterPath="$PROJECT_DIR$/test/probability/TestChance.java" />
     </list>
@@ -21,9 +22,9 @@
             <entry file="file://$PROJECT_DIR$/test/probability/TestChance.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="681">
-                  <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+                  <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
                   <folding>
-                    <element signature="e#0#2042#0" expanded="true" />
+                    <element signature="e#0#2378#0" expanded="true" />
                     <element signature="imports" expanded="true" />
                   </folding>
                 </state>
@@ -37,10 +38,10 @@
           <file leaf-file-name="Chance.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="647">
-                  <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+                <state relative-caret-position="681">
+                  <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
                   <folding>
-                    <element signature="e#0#1157#0" expanded="true" />
+                    <element signature="e#0#1341#0" expanded="true" />
                     <element signature="e#448#449#0" expanded="true" />
                     <element signature="e#495#496#0" expanded="true" />
                     <element signature="e#765#766#0" expanded="true" />
@@ -51,6 +52,8 @@
                     <element signature="e#1049#1050#0" expanded="true" />
                     <element signature="e#1088#1089#0" expanded="true" />
                     <element signature="e#1153#1154#0" expanded="true" />
+                    <element signature="e#1279#1280#0" expanded="true" />
+                    <element signature="e#1337#1338#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -357,9 +360,6 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestChance - 2017.10.09 at 12h 12m 59s.xml">
-      <configuration name="TestChance" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestChance - 2017.10.09 at 13h 09m 21s.xml">
       <configuration name="TestChance" configurationId="JUnit" />
     </history-entry>
@@ -382,6 +382,9 @@
       <configuration name="TestChance" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestChance - 2017.10.09 at 14h 59m 17s.xml">
+      <configuration name="TestChance" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestChance - 2017.10.09 at 16h 42m 53s.xml">
       <configuration name="TestChance" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestChance_not - 2017.10.09 at 14h 51m 35s.xml">
@@ -586,9 +589,9 @@
     <entry file="file://$PROJECT_DIR$/test/probability/TestChance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="681">
-          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <caret line="71" column="5" lean-forward="false" selection-start-line="71" selection-start-column="5" selection-end-line="71" selection-end-column="5" />
           <folding>
-            <element signature="e#0#2042#0" expanded="true" />
+            <element signature="e#0#2378#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -596,10 +599,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="647">
-          <caret line="43" column="5" lean-forward="false" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+        <state relative-caret-position="681">
+          <caret line="48" column="5" lean-forward="false" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
           <folding>
-            <element signature="e#0#1157#0" expanded="true" />
+            <element signature="e#0#1341#0" expanded="true" />
             <element signature="e#448#449#0" expanded="true" />
             <element signature="e#495#496#0" expanded="true" />
             <element signature="e#765#766#0" expanded="true" />
@@ -610,6 +613,8 @@
             <element signature="e#1049#1050#0" expanded="true" />
             <element signature="e#1088#1089#0" expanded="true" />
             <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1279#1280#0" expanded="true" />
+            <element signature="e#1337#1338#0" expanded="true" />
           </folding>
         </state>
       </provider>

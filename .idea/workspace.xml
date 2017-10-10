@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quantity/Quantity.java" afterPath="$PROJECT_DIR$/src/quantity/Quantity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quantity/Unit.java" afterPath="$PROJECT_DIR$/src/quantity/Unit.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/quantity/TestQuantity.java" afterPath="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,16 +16,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.40245327">
+    <splitter split-orientation="horizontal" split-proportion="0.4088785">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="TestQuantity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-297">
-                  <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+                <state relative-caret-position="1155">
+                  <caret line="63" column="62" lean-forward="false" selection-start-line="63" selection-start-column="62" selection-end-line="63" selection-end-column="62" />
                   <folding>
-                    <element signature="e#0#3343#0" expanded="true" />
+                    <element signature="e#0#3420#0" expanded="true" />
                     <element signature="imports" expanded="true" />
                     <element signature="e#1689#1731#0" expanded="true" />
                     <element signature="e#1689#1731#0" expanded="true" />
@@ -80,12 +80,10 @@
           <file leaf-file-name="Unit.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/quantity/Unit.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+                <state relative-caret-position="900">
+                  <caret line="55" column="40" lean-forward="false" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
                   <folding>
-                    <element signature="e#0#2192#0" expanded="true" />
-                    <element signature="e#1903#1904#0" expanded="true" />
-                    <element signature="e#1998#1999#0" expanded="true" />
+                    <element signature="e#0#2202#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -155,9 +153,9 @@
         <option value="$PROJECT_DIR$/test/rectangle/RectangleTest.java" />
         <option value="$PROJECT_DIR$/test/probability/TestChance.java" />
         <option value="$PROJECT_DIR$/src/probability/Chance.java" />
-        <option value="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/quantity/Quantity.java" />
+        <option value="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
         <option value="$PROJECT_DIR$/src/quantity/Unit.java" />
       </list>
     </option>
@@ -304,7 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestQuantity">
+  <component name="RunManager" selected="JUnit.TestQuantity.hash">
     <configuration name="C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -356,31 +354,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestChance.not" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="probability.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="oo_boot_camp_2017-10-09_java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="probability" />
-      <option name="MAIN_CLASS_NAME" value="probability.TestChance" />
-      <option name="METHOD_NAME" value="not" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="TestQuantity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -419,6 +392,31 @@
       <option name="PACKAGE_NAME" value="quantity" />
       <option name="MAIN_CLASS_NAME" value="quantity.TestQuantity" />
       <option name="METHOD_NAME" value="arithmetic" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestQuantity.hash" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="quantity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="oo_boot_camp_2017-10-09_java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="quantity" />
+      <option name="MAIN_CLASS_NAME" value="quantity.TestQuantity" />
+      <option name="METHOD_NAME" value="hash" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -513,18 +511,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TestChance" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestChance.not" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestQuantity.arithmetic" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestQuantity" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestQuantity.arithmetic" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestQuantity" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestQuantity.hash" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestQuantity" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestQuantity.arithmetic" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestChance" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestChance.not" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestQuantity.hash" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestQuantity" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestQuantity.arithmetic" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestChance" />
       </list>
     </recent_temporary>
   </component>
@@ -538,7 +536,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507656125696</updated>
-      <workItem from="1507656127351" duration="2735000" />
+      <workItem from="1507656127351" duration="2849000" />
     </task>
     <task id="LOCAL-00001" summary="added pom.xml">
       <created>1507656803571</created>
@@ -568,19 +566,17 @@
       <option name="project" value="LOCAL" />
       <updated>1507658296888</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="removed superfluous method">
+      <created>1507658921270</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1507658921270</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_dev_src_java_oo_boot_camp_2017-10-09_java_in_oo_boot_camp_2017-10-09_java - 2017.10.10 at 14h 05m 52s.xml">
-      <configuration name="C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="C__Users_dev_src_java_oo_boot_camp_2017-10-09_java_in_oo_boot_camp_2017-10-09_java - 2017.10.10 at 14h 50m 07s.xml">
-      <configuration name="C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="C__Users_dev_src_java_oo_boot_camp_2017-10-09_java_in_oo_boot_camp_2017-10-09_java - 2017.10.10 at 14h 51m 08s.xml">
-      <configuration name="C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="C__Users_dev_src_java_oo_boot_camp_2017-10-09_java_in_oo_boot_camp_2017-10-09_java - 2017.10.10 at 14h 51m 59s.xml">
       <configuration name="C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" configurationId="JUnit" />
     </history-entry>
@@ -599,12 +595,21 @@
     <history-entry file="TestQuantity - 2017.10.10 at 20h 07m 28s.xml">
       <configuration name="TestQuantity" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestQuantity - 2017.10.10 at 20h 08m 51s.xml">
+      <configuration name="TestQuantity" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="TestQuantity_arithmetic - 2017.10.10 at 19h 38m 53s.xml">
       <configuration name="TestQuantity.arithmetic" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestQuantity_hash - 2017.10.10 at 20h 09m 45s.xml">
+      <configuration name="TestQuantity.hash" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestQuantity_hash - 2017.10.10 at 20h 10m 14s.xml">
+      <configuration name="TestQuantity.hash" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2735000" />
+    <option name="totallyTimeSpent" value="2849000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2039" y="-9" width="1938" height="1218" extended-state="6" />
@@ -682,7 +687,7 @@
         <state relative-caret-position="1092">
           <caret line="61" column="51" lean-forward="false" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
           <folding>
-            <element signature="e#0#3343#0" expanded="true" />
+            <element signature="e#0#3420#0" expanded="true" />
             <element signature="imports" expanded="true" />
             <element signature="e#1689#1731#0" expanded="true" />
             <element signature="e#1689#1731#0" expanded="true" />
@@ -719,9 +724,7 @@
         <state relative-caret-position="966">
           <caret line="51" column="100" lean-forward="false" selection-start-line="51" selection-start-column="100" selection-end-line="51" selection-end-column="100" />
           <folding>
-            <element signature="e#0#2192#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
+            <element signature="e#0#2202#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -741,6 +744,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1524#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -860,6 +866,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1524#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -885,21 +894,6 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="31" column="43" lean-forward="true" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#3343#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1689#1731#0" expanded="true" />
-            <element signature="e#1689#1731#0" expanded="true" />
-            <element signature="e#1792#1834#0" expanded="true" />
-            <element signature="e#1792#1834#0" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../jdk/jdk1.8_64/src.zip!/java/lang/Double.java">
@@ -932,14 +926,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="63" column="62" lean-forward="false" selection-start-line="63" selection-start-column="62" selection-end-line="63" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#3420#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1689#1731#0" expanded="true" />
+            <element signature="e#1689#1731#0" expanded="true" />
+            <element signature="e#1792#1834#0" expanded="true" />
+            <element signature="e#1792#1834#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/quantity/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        <state relative-caret-position="900">
+          <caret line="55" column="40" lean-forward="false" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="40" />
           <folding>
-            <element signature="e#0#2192#0" expanded="true" />
-            <element signature="e#1903#1904#0" expanded="true" />
-            <element signature="e#1998#1999#0" expanded="true" />
+            <element signature="e#0#2202#0" expanded="true" />
           </folding>
         </state>
       </provider>

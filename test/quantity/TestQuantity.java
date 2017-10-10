@@ -61,6 +61,7 @@ public class TestQuantity {
     public void hash() {
         assertEquals(TABLESPOON.s(4).hashCode(), OUNCE.s(2).hashCode());
         assertEquals(FOOT.s(330).hashCode(), FURLONG.s(0.5).hashCode());
+        assertEquals(FAHRENHEIT.s(50).hashCode(), CELSIUS.s(10).hashCode());
     }
 
     @Test

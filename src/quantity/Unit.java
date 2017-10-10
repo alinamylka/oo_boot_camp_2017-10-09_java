@@ -53,7 +53,7 @@ public class Unit {
     }
 
     int hashCode(double amount) {
-        return Objects.hash(Math.round(amount * baseUnitRatio * 10000000d) / 10000000d);
+        return Objects.hash(Math.round((amount - offset)* baseUnitRatio * 10000000d) / 10000000d);
     }
 
     public Quantity s(double amount) {

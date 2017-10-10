@@ -5,6 +5,8 @@
 
 package quantity;
 
+import java.util.Objects;
+
 // Understands a specific measurement
 public class Quantity {
 
@@ -31,5 +33,10 @@ public class Quantity {
 
     private double convertedAmount(Quantity other) {
         return this.unit.convertedAmount(other.amount, other.unit);
+    }
+
+    @Override
+    public int hashCode() {
+        return this.unit.hashCode(this.amount);
     }
 }

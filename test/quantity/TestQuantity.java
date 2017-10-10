@@ -7,6 +7,9 @@ package quantity;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
+import java.util.HashSet;
+
 import static org.junit.jupiter.api.Assertions.*;
 import static quantity.Unit.*;
 
@@ -26,5 +29,19 @@ public class TestQuantity {
         assertNotEquals(new Quantity(4, TABLESPOON), new Quantity(4, OUNCE));
         assertEquals(new Quantity(4, TABLESPOON), new Quantity(2, OUNCE));
         assertEquals(new Quantity(1, GALLON), new Quantity(768, TEASPOON));
+    }
+
+    @Test
+    public void polymorphism() {
+        assertEquals(1, new HashSet<Quantity>(
+                Arrays.asList(new Quantity(4, TABLESPOON), new Quantity(2, OUNCE))).size());
+        assertTrue(new HashSet<Quantity>(
+                Arrays.asList(new Quantity(4, TABLESPOON), new Quantity(2, OUNCE)))
+                .contains(new Quantity(0.25, CUP)));
+    }
+
+    @Test
+    public void hash() {
+        assertEquals(new Quantity(4, TABLESPOON).hashCode(), new Quantity(2, OUNCE).hashCode());
     }
 }

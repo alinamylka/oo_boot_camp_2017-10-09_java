@@ -5,6 +5,8 @@
 
 package quantity;
 
+import java.util.Objects;
+
 // Understands a specific metric
 public class Unit {
 
@@ -29,4 +31,9 @@ public class Unit {
     public double convertedAmount(double otherAmount, Unit other) {
         return otherAmount * other.baseUnitRatio / this.baseUnitRatio;
     }
+
+    public int hashCode(double amount) {
+        return Objects.hash(Math.round(amount * baseUnitRatio * 10000000d) / 10000000d);
+    }
+
 }

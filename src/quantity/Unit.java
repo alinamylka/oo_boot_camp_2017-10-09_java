@@ -25,4 +25,8 @@ public class Unit {
     public Unit(double relativeRatio, Unit relativeUnit) {
         this.baseUnitRatio = relativeRatio * relativeUnit.baseUnitRatio;
     }
+
+    public double convertedAmount(double otherAmount, Unit other) {
+        return otherAmount * other.baseUnitRatio / this.baseUnitRatio;
+    }
 }

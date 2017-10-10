@@ -8,6 +8,8 @@ package quantity;
 // Understands a specific measurement
 public class Quantity {
 
+    private final static double TOLERANCE = 0.0000001;
+
     private final double amount;
     private final Unit unit;
 
@@ -24,6 +26,10 @@ public class Quantity {
     }
 
     private boolean equals(Quantity other) {
-        return this.amount == other.amount && this.unit == other.unit;
+        return Math.abs(this.amount - this.convertedAmount(other)) < TOLERANCE;
+    }
+
+    private double convertedAmount(Quantity other) {
+        return this.unit.convertedAmount(other.amount, other.unit);
     }
 }

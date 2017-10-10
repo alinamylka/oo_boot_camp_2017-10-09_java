@@ -24,5 +24,7 @@ public class TestQuantity {
     @Test
     public void equalityOfDifferentUnit() {
         assertNotEquals(new Quantity(4, TABLESPOON), new Quantity(4, OUNCE));
+        assertEquals(new Quantity(4, TABLESPOON), new Quantity(2, OUNCE));
+        assertEquals(new Quantity(1, GALLON), new Quantity(768, TEASPOON));
     }
 }

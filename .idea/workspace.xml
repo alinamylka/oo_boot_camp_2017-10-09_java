@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quantity/Quantity.java" afterPath="$PROJECT_DIR$/src/quantity/Quantity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quantity/Unit.java" afterPath="$PROJECT_DIR$/src/quantity/Unit.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/quantity/TestQuantity.java" afterPath="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,12 +21,11 @@
           <file leaf-file-name="TestQuantity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+                <state relative-caret-position="459">
+                  <caret line="27" column="63" lean-forward="false" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
                   <folding>
-                    <element signature="e#0#816#0" expanded="true" />
-                    <element signature="e#728#729#0" expanded="true" />
-                    <element signature="e#812#813#0" expanded="true" />
+                    <element signature="e#0#967#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -35,27 +35,29 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Quantity.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Quantity.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+                <state relative-caret-position="544">
+                  <caret line="32" column="67" lean-forward="false" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
                   <folding>
-                    <element signature="e#0#727#0" expanded="true" />
-                    <element signature="e#646#647#0" expanded="true" />
-                    <element signature="e#723#724#0" expanded="true" />
+                    <element signature="e#0#920#0" expanded="true" />
+                    <element signature="e#702#703#0" expanded="true" />
+                    <element signature="e#788#789#0" expanded="true" />
+                    <element signature="e#842#843#0" expanded="true" />
+                    <element signature="e#916#917#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Unit.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Unit.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/quantity/Unit.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="72" lean-forward="false" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
+                <state relative-caret-position="493">
+                  <caret line="29" column="70" lean-forward="false" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
                   <folding>
-                    <element signature="e#0#837#0" expanded="true" />
+                    <element signature="e#0#983#0" expanded="true" />
                     <element signature="e#654#655#0" expanded="true" />
                     <element signature="e#694#695#0" expanded="true" />
                   </folding>
@@ -97,9 +99,9 @@
         <option value="$PROJECT_DIR$/test/rectangle/RectangleTest.java" />
         <option value="$PROJECT_DIR$/test/probability/TestChance.java" />
         <option value="$PROJECT_DIR$/src/probability/Chance.java" />
-        <option value="$PROJECT_DIR$/src/quantity/Unit.java" />
         <option value="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
         <option value="$PROJECT_DIR$/src/quantity/Quantity.java" />
+        <option value="$PROJECT_DIR$/src/quantity/Unit.java" />
       </list>
     </option>
   </component>
@@ -402,12 +404,6 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestChance - 2017.10.09 at 14h 57m 17s.xml">
-      <configuration name="TestChance" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestChance - 2017.10.09 at 14h 59m 17s.xml">
-      <configuration name="TestChance" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestChance - 2017.10.09 at 16h 42m 53s.xml">
       <configuration name="TestChance" configurationId="JUnit" />
     </history-entry>
@@ -430,6 +426,12 @@
       <configuration name="TestQuantity" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestQuantity - 2017.10.10 at 10h 06m 21s.xml">
+      <configuration name="TestQuantity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestQuantity - 2017.10.10 at 10h 08m 06s.xml">
+      <configuration name="TestQuantity" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestQuantity - 2017.10.10 at 10h 10m 48s.xml">
       <configuration name="TestQuantity" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -648,36 +650,37 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="459">
+          <caret line="27" column="63" lean-forward="false" selection-start-line="27" selection-start-column="63" selection-end-line="27" selection-end-column="63" />
           <folding>
-            <element signature="e#0#816#0" expanded="true" />
-            <element signature="e#728#729#0" expanded="true" />
-            <element signature="e#812#813#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/quantity/Unit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="72" lean-forward="false" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
-          <folding>
-            <element signature="e#0#837#0" expanded="true" />
-            <element signature="e#654#655#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
+            <element signature="e#0#967#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        <state relative-caret-position="544">
+          <caret line="32" column="67" lean-forward="false" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
           <folding>
-            <element signature="e#0#727#0" expanded="true" />
-            <element signature="e#646#647#0" expanded="true" />
-            <element signature="e#723#724#0" expanded="true" />
+            <element signature="e#0#920#0" expanded="true" />
+            <element signature="e#702#703#0" expanded="true" />
+            <element signature="e#788#789#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quantity/Unit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" column="70" lean-forward="false" selection-start-line="29" selection-start-column="70" selection-end-line="29" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#983#0" expanded="true" />
+            <element signature="e#654#655#0" expanded="true" />
+            <element signature="e#694#695#0" expanded="true" />
           </folding>
         </state>
       </provider>

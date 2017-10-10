@@ -25,7 +25,7 @@ public class Unit {
     public static final Unit MILE = new Unit(8, FURLONG);
 
     public static final Unit CELSIUS = new Unit();
-    public static final Unit FAHRENHEIT = new Unit(5/9.0, 32, CELSIUS);
+    public static final Unit FAHRENHEIT = new Unit(5 / 9.0, 32, CELSIUS);
 
     private final double baseUnitRatio;
     private final double offset;
@@ -58,10 +58,6 @@ public class Unit {
 
     public Quantity s(double amount) {
         return new Quantity(amount, this);
-    }
-
-    public Quantity es(double amount) {
-        return this.s(amount);
     }
 
     public boolean isCompatible(Unit other) {

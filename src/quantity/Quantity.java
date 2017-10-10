@@ -15,7 +15,7 @@ public class Quantity {
     private final double amount;
     private final Unit unit;
 
-    public Quantity(double amount, Unit unit) {
+    Quantity(double amount, Unit unit) {
         this.amount = amount;
         this.unit = unit;
     }
@@ -37,6 +37,6 @@ public class Quantity {
 
     @Override
     public int hashCode() {
-        return this.unit.hashCode(this.amount);
+        return unit.hashCode(amount);
     }
 }

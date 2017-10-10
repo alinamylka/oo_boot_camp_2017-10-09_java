@@ -44,4 +44,11 @@ public class TestQuantity {
     public void hash() {
         assertEquals(TABLESPOON.s(4).hashCode(), OUNCE.s(2).hashCode());
     }
+
+    @Test
+    public void arithmetic() {
+        assertEquals(QUART.s(0.5), TABLESPOON.s(6).plus(OUNCE.s(13)));
+        assertEquals(TABLESPOON.s(-6), TABLESPOON.s(6).negate());
+        assertEquals(PINT.s(-0.5), TABLESPOON.s(10).minus(OUNCE.s(13)));
+    }
 }

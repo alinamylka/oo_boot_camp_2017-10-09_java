@@ -39,4 +39,16 @@ public class Quantity {
     public int hashCode() {
         return unit.hashCode(amount);
     }
+
+    public Quantity plus(Quantity other) {
+        return new Quantity(this.amount + this.convertedAmount(other), this.unit);
+    }
+
+    public Quantity negate(){
+        return new Quantity(-amount, unit);
+    }
+
+    public Quantity minus(Quantity other) {
+        return this.plus(other.negate());
+    }
 }

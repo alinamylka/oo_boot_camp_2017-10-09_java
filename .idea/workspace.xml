@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quantity/Quantity.java" afterPath="$PROJECT_DIR$/src/quantity/Quantity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quantity/Unit.java" afterPath="$PROJECT_DIR$/src/quantity/Unit.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/quantity/TestQuantity.java" afterPath="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
     </list>
@@ -21,9 +22,9 @@
             <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="562">
-                  <caret line="54" column="63" lean-forward="false" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
+                  <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
                   <folding>
-                    <element signature="e#0#1747#0" expanded="true" />
+                    <element signature="e#0#1902#0" expanded="true" />
                     <element signature="imports" expanded="true" />
                   </folding>
                 </state>
@@ -37,22 +38,22 @@
           <file leaf-file-name="Quantity.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="460">
-                  <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+                <state relative-caret-position="290">
+                  <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
                   <folding>
-                    <element signature="e#0#1334#0" expanded="true" />
-                    <element signature="e#722#723#0" expanded="true" />
-                    <element signature="e#808#809#0" expanded="true" />
-                    <element signature="e#862#863#0" expanded="true" />
-                    <element signature="e#936#937#0" expanded="true" />
-                    <element signature="e#979#980#0" expanded="true" />
-                    <element signature="e#1023#1024#0" expanded="true" />
-                    <element signature="e#1067#1068#0" expanded="true" />
-                    <element signature="e#1156#1157#0" expanded="true" />
-                    <element signature="e#1187#1188#0" expanded="true" />
-                    <element signature="e#1237#1238#0" expanded="true" />
-                    <element signature="e#1282#1283#0" expanded="true" />
-                    <element signature="e#1330#1331#0" expanded="true" />
+                    <element signature="e#0#1496#0" expanded="true" />
+                    <element signature="e#913#914#0" expanded="true" />
+                    <element signature="e#970#971#0" expanded="true" />
+                    <element signature="e#1024#1025#0" expanded="true" />
+                    <element signature="e#1098#1099#0" expanded="true" />
+                    <element signature="e#1141#1142#0" expanded="true" />
+                    <element signature="e#1185#1186#0" expanded="true" />
+                    <element signature="e#1229#1230#0" expanded="true" />
+                    <element signature="e#1318#1319#0" expanded="true" />
+                    <element signature="e#1349#1350#0" expanded="true" />
+                    <element signature="e#1399#1400#0" expanded="true" />
+                    <element signature="e#1444#1445#0" expanded="true" />
+                    <element signature="e#1492#1493#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -61,18 +62,18 @@
           <file leaf-file-name="Unit.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/quantity/Unit.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="531">
-                  <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+                <state relative-caret-position="548">
+                  <caret line="56" column="47" lean-forward="false" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
                   <folding>
-                    <element signature="e#0#1581#0" expanded="true" />
-                    <element signature="e#960#961#0" expanded="true" />
-                    <element signature="e#1000#1001#0" expanded="true" />
-                    <element signature="e#1314#1315#0" expanded="true" />
-                    <element signature="e#1409#1410#0" expanded="true" />
-                    <element signature="e#1449#1450#0" expanded="true" />
-                    <element signature="e#1498#1499#0" expanded="true" />
-                    <element signature="e#1539#1540#0" expanded="true" />
-                    <element signature="e#1576#1577#0" expanded="true" />
+                    <element signature="e#0#1791#0" expanded="true" />
+                    <element signature="e#1424#1425#0" expanded="true" />
+                    <element signature="e#1519#1520#0" expanded="true" />
+                    <element signature="e#1559#1560#0" expanded="true" />
+                    <element signature="e#1608#1609#0" expanded="true" />
+                    <element signature="e#1649#1650#0" expanded="true" />
+                    <element signature="e#1686#1687#0" expanded="true" />
+                    <element signature="e#1733#1734#0" expanded="true" />
+                    <element signature="e#1787#1788#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -120,9 +121,9 @@
         <option value="$PROJECT_DIR$/test/rectangle/RectangleTest.java" />
         <option value="$PROJECT_DIR$/test/probability/TestChance.java" />
         <option value="$PROJECT_DIR$/src/probability/Chance.java" />
+        <option value="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
         <option value="$PROJECT_DIR$/src/quantity/Quantity.java" />
         <option value="$PROJECT_DIR$/src/quantity/Unit.java" />
-        <option value="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
       </list>
     </option>
   </component>
@@ -459,11 +460,11 @@
     <history-entry file="C__Users_dev_src_java_oo_boot_camp_2017-10-09_java_in_oo_boot_camp_2017-10-09_java - 2017.10.10 at 13h 57m 41s.xml">
       <configuration name="C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestQuantity - 2017.10.10 at 10h 37m 56s.xml">
-      <configuration name="TestQuantity" configurationId="JUnit" />
+    <history-entry file="C__Users_dev_src_java_oo_boot_camp_2017-10-09_java_in_oo_boot_camp_2017-10-09_java - 2017.10.10 at 14h 00m 27s.xml">
+      <configuration name="C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestQuantity - 2017.10.10 at 10h 39m 22s.xml">
-      <configuration name="TestQuantity" configurationId="JUnit" />
+    <history-entry file="C__Users_dev_src_java_oo_boot_camp_2017-10-09_java_in_oo_boot_camp_2017-10-09_java - 2017.10.10 at 14h 02m 48s.xml">
+      <configuration name="C:\Users\dev\src\java\oo_boot_camp_2017-10-09_java in oo_boot_camp_2017-10-09_java" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestQuantity - 2017.10.10 at 10h 40m 23s.xml">
       <configuration name="TestQuantity" configurationId="JUnit" />
@@ -474,11 +475,11 @@
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.32898173" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16135085" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" x="1290" y="59" width="294" height="766" />
@@ -710,53 +711,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#1902#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="290">
+          <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding>
-            <element signature="e#0#1334#0" expanded="true" />
-            <element signature="e#722#723#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#936#937#0" expanded="true" />
-            <element signature="e#979#980#0" expanded="true" />
-            <element signature="e#1023#1024#0" expanded="true" />
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1156#1157#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1237#1238#0" expanded="true" />
-            <element signature="e#1282#1283#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#0#1496#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#970#971#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1098#1099#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1185#1186#0" expanded="true" />
+            <element signature="e#1229#1230#0" expanded="true" />
+            <element signature="e#1318#1319#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1399#1400#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
+            <element signature="e#1492#1493#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/quantity/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="49" column="30" lean-forward="false" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+        <state relative-caret-position="548">
+          <caret line="56" column="47" lean-forward="false" selection-start-line="56" selection-start-column="47" selection-end-line="56" selection-end-column="47" />
           <folding>
-            <element signature="e#0#1581#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
-            <element signature="e#1314#1315#0" expanded="true" />
-            <element signature="e#1409#1410#0" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1498#1499#0" expanded="true" />
-            <element signature="e#1539#1540#0" expanded="true" />
-            <element signature="e#1576#1577#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="54" column="63" lean-forward="false" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#1747#0" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="e#0#1791#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1519#1520#0" expanded="true" />
+            <element signature="e#1559#1560#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1649#1650#0" expanded="true" />
+            <element signature="e#1686#1687#0" expanded="true" />
+            <element signature="e#1733#1734#0" expanded="true" />
+            <element signature="e#1787#1788#0" expanded="true" />
           </folding>
         </state>
       </provider>

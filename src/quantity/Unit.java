@@ -25,13 +25,16 @@ public class Unit {
     public static final Unit MILE = new Unit(8, FURLONG);
 
     private final double baseUnitRatio;
+    private final Unit baseUnit;
 
     private Unit() {
         this.baseUnitRatio = 1.0;
+        this.baseUnit = this;
     }
 
     private Unit(double relativeRatio, Unit relativeUnit) {
         this.baseUnitRatio = relativeRatio * relativeUnit.baseUnitRatio;
+        this.baseUnit = relativeUnit.baseUnit;
     }
 
     double convertedAmount(double otherAmount, Unit other) {
@@ -50,4 +53,7 @@ public class Unit {
         return this.s(amount);
     }
 
+    public boolean isCompatible(Unit other) {
+        return this.baseUnit == other.baseUnit;
+    }
 }

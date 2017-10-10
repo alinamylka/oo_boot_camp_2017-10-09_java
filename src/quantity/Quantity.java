@@ -28,7 +28,12 @@ public class Quantity {
     }
 
     private boolean equals(Quantity other) {
+        if (!this.isCompatible(other)) return false;
         return Math.abs(this.amount - this.convertedAmount(other)) < TOLERANCE;
+    }
+
+    private boolean isCompatible(Quantity other) {
+        return this.unit.isCompatible(other.unit);
     }
 
     private double convertedAmount(Quantity other) {

@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oo_boot_camp_2017-10-09_java.iml" afterPath="$PROJECT_DIR$/oo_boot_camp_2017-10-09_java.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,8 +20,8 @@
           <file leaf-file-name="TestQuantity.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-338">
-                  <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+                <state relative-caret-position="628">
+                  <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
                   <folding>
                     <element signature="e#0#2633#0" expanded="true" />
                     <element signature="imports" expanded="true" />
@@ -471,8 +469,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507656125696</updated>
-      <workItem from="1507656127351" duration="646000" />
+      <workItem from="1507656127351" duration="705000" />
     </task>
+    <task id="LOCAL-00001" summary="added pom.xml">
+      <created>1507656803571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1507656803571</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -508,7 +514,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="646000" />
+    <option name="totallyTimeSpent" value="705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="2039" y="-9" width="1938" height="1218" extended-state="6" />
@@ -569,6 +575,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added pom.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added pom.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -802,21 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
-          <caret line="26" column="9" lean-forward="false" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#2633#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#1033#1075#0" expanded="true" />
-            <element signature="e#1033#1075#0" expanded="true" />
-            <element signature="e#1144#1186#0" expanded="true" />
-            <element signature="e#1144#1186#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -826,6 +821,21 @@
       </provider>
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="72" column="31" lean-forward="true" selection-start-line="72" selection-start-column="31" selection-end-line="72" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#2633#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1033#1075#0" expanded="true" />
+            <element signature="e#1033#1075#0" expanded="true" />
+            <element signature="e#1144#1186#0" expanded="true" />
+            <element signature="e#1144#1186#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

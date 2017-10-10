@@ -29,6 +29,7 @@ public class TestQuantity {
         assertNotEquals(TABLESPOON.s(4), OUNCE.s(4));
         assertEquals(TABLESPOON.s(4), OUNCE.s(2));
         assertEquals(GALLON.s(1), TEASPOON.s(768));
+        assertEquals(MILE.s(1), INCH.es(12 * 5280));
     }
 
     @Test
@@ -43,6 +44,7 @@ public class TestQuantity {
     @Test
     public void hash() {
         assertEquals(TABLESPOON.s(4).hashCode(), OUNCE.s(2).hashCode());
+        assertEquals(FOOT.s(330).hashCode(), FURLONG.s(0.5).hashCode());
     }
 
     @Test
@@ -50,5 +52,6 @@ public class TestQuantity {
         assertEquals(QUART.s(0.5), TABLESPOON.s(6).plus(OUNCE.s(13)));
         assertEquals(TABLESPOON.s(-6), TABLESPOON.s(6).negate());
         assertEquals(PINT.s(-0.5), TABLESPOON.s(10).minus(OUNCE.s(13)));
+        assertEquals(FOOT.s(-4), INCH.es(24).minus(YARD.s(2)));
     }
 }

@@ -18,30 +18,30 @@ public class TestQuantity {
 
     @Test
     public void equalityOfSameUnit() {
-        assertEquals(new Quantity(4, TABLESPOON), new Quantity(4, TABLESPOON));
-        assertNotEquals(new Quantity(4, TABLESPOON), new Quantity(3, TABLESPOON));
-        assertNotEquals(new Quantity(4, TABLESPOON), new Object());
-        assertNotEquals(new Quantity(4, TABLESPOON), null);
+        assertEquals(TABLESPOON.s(4), TABLESPOON.s(4));
+        assertNotEquals(TABLESPOON.s(4), TABLESPOON.s(3));
+        assertNotEquals(TABLESPOON.s(4), new Object());
+        assertNotEquals(TABLESPOON.s(4), null);
     }
 
     @Test
     public void equalityOfDifferentUnit() {
-        assertNotEquals(new Quantity(4, TABLESPOON), new Quantity(4, OUNCE));
-        assertEquals(new Quantity(4, TABLESPOON), new Quantity(2, OUNCE));
-        assertEquals(new Quantity(1, GALLON), new Quantity(768, TEASPOON));
+        assertNotEquals(TABLESPOON.s(4), OUNCE.s(4));
+        assertEquals(TABLESPOON.s(4), OUNCE.s(2));
+        assertEquals(GALLON.s(1), TEASPOON.s(768));
     }
 
     @Test
     public void polymorphism() {
         assertEquals(1, new HashSet<Quantity>(
-                Arrays.asList(new Quantity(4, TABLESPOON), new Quantity(2, OUNCE))).size());
+                Arrays.asList(TABLESPOON.s(4), OUNCE.s(2))).size());
         assertTrue(new HashSet<Quantity>(
-                Arrays.asList(new Quantity(4, TABLESPOON), new Quantity(2, OUNCE)))
-                .contains(new Quantity(0.25, CUP)));
+                Arrays.asList(TABLESPOON.s(4), OUNCE.s(2)))
+                .contains(CUP.s(0.25)));
     }
 
     @Test
     public void hash() {
-        assertEquals(new Quantity(4, TABLESPOON).hashCode(), new Quantity(2, OUNCE).hashCode());
+        assertEquals(TABLESPOON.s(4).hashCode(), OUNCE.s(2).hashCode());
     }
 }

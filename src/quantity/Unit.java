@@ -20,20 +20,24 @@ public class Unit {
 
     private final double baseUnitRatio;
 
-    public Unit() {
+    private Unit() {
         this.baseUnitRatio = 1.0;
     }
 
-    public Unit(double relativeRatio, Unit relativeUnit) {
+    private Unit(double relativeRatio, Unit relativeUnit) {
         this.baseUnitRatio = relativeRatio * relativeUnit.baseUnitRatio;
     }
 
-    public double convertedAmount(double otherAmount, Unit other) {
+    double convertedAmount(double otherAmount, Unit other) {
         return otherAmount * other.baseUnitRatio / this.baseUnitRatio;
     }
 
-    public int hashCode(double amount) {
+    int hashCode(double amount) {
         return Objects.hash(Math.round(amount * baseUnitRatio * 10000000d) / 10000000d);
+    }
+
+    public Quantity s(double amount) {
+        return new Quantity(amount, this);
     }
 
 }

@@ -5,7 +5,6 @@
 
 package quantity;
 
-import java.util.Objects;
 
 // Understands a specific measurement
 public class Quantity {

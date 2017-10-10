@@ -52,8 +52,12 @@ public class Unit {
         return (otherAmount - other.offset) * other.baseUnitRatio / this.baseUnitRatio + this.offset;
     }
 
-    int hashCode(double amount) {
+    /*int hashCode(double amount) {
         return Objects.hash(Math.round(amount * baseUnitRatio * 10000000d) / 10000000d);
+    }*/
+
+    int hashCode(double amount) {
+        return Objects.hash(amount * baseUnitRatio );
     }
 
     public Quantity s(double amount) {

@@ -65,6 +65,7 @@ public class TestQuantity {
 
     @Test
     public void arithmetic() {
+        assertEquals(TEASPOON.s(2), TABLESPOON.s(1).minus(TEASPOON.s(1)));
         assertEquals(QUART.s(0.5), TABLESPOON.s(6).plus(OUNCE.s(13)));
         assertEquals(TABLESPOON.s(-6), TABLESPOON.s(6).negate());
         assertEquals(PINT.s(-0.5), TABLESPOON.s(10).minus(OUNCE.s(13)));

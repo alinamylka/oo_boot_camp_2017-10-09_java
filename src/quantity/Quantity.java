@@ -48,7 +48,7 @@ public class Quantity {
         return new Quantity(this.amount + this.convertedAmount(other), this.unit);
     }
 
-    public Quantity negate(){
+    public Quantity negate() {
         return new Quantity(-amount, unit);
     }
 

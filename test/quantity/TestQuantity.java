@@ -35,14 +35,15 @@ public class TestQuantity {
 
     @Test
     public void max() {
-        assertEquals(TEASPOON.s(4), Orderable.max(TEASPOON.s(4), TABLESPOON.s(1)));
+        assertEquals(TEASPOON.s(4),
+                Orderable.max(TEASPOON.s(4), TABLESPOON.s(1)));
     }
 
     @Test
     public void maxMixUnits() {
-        assertThrows(IllegalArgumentException.class, () -> {
-            Orderable.max(TEASPOON.s(4), MILE.s(1));
-        });
+        assertThrows(IllegalArgumentException.class, () ->
+            Orderable.max(TEASPOON.s(4), MILE.s(1))
+        );
     }
 
     @Test

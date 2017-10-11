@@ -81,7 +81,9 @@ public class TestChance {
 
     @Test
     public void max() {
-        assertEquals(Orderable.max(new Chance(0.8125),  new Chance(0.1), new Chance(0.5))
+        assertEquals(Orderable.max(new Chance(0.8125),
+                new Chance(0.1),
+                new Chance(0.5))
                 , new Chance(0.8125));
     }
 

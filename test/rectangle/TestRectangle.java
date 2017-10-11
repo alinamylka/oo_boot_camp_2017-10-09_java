@@ -18,9 +18,7 @@ public class TestRectangle {
 
     @Test
     public void max() {
-        assertEquals(Orderable.max(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0))
-                , Rectangle.squareOf(4.0));
-
+        assertEquals(Orderable.max(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0)).area(), 16.0);
     }
 
     @Test

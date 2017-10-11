@@ -7,32 +7,42 @@ package rectangle;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static junit.framework.TestCase.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 // Confirms the behavior of a Rectangle
 public class TestRectangle {
     @Test
     public void area() {
-        assertEquals(24.0, new Rectangle(4.0, 6.0).area());
-        assertEquals(25.0, Rectangle.square(5.0).area());
+        assertEquals(24.0, Rectangle.of(4.0, 6.0).area());
+        assertEquals(25.0, Rectangle.squareOf(5.0).area());
     }
 
     @Test
     public void perimeter() {
-        assertEquals(20, new Rectangle(4, 6).perimeter());
-        assertEquals(20, Rectangle.square(5).perimeter());
+        assertEquals(20, Rectangle.of(4, 6).perimeter());
+        assertEquals(20, Rectangle.squareOf(5).perimeter());
+    }
+
+    @Test
+    public void isSquare() {
+        assertTrue(Rectangle.squareOf(4).isSquare());
+        assertFalse(Rectangle.of(4, 6).isSquare());
+        assertTrue(Rectangle.of(4, 4).isSquare());
     }
 
     @Test
     public void validParameters() {
         assertThrows(IllegalArgumentException.class, () -> {
-            new Rectangle(0, 6);
+            Rectangle.of(0, 6);
         });
         assertThrows(IllegalArgumentException.class, () -> {
-            new Rectangle(4, 0);
+            Rectangle.of(4, 0);
         });
         assertThrows(IllegalArgumentException.class, () -> {
-            Rectangle.square(0);
+            Rectangle.squareOf(0);
         });
     }
 }

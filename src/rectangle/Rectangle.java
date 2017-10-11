@@ -5,13 +5,15 @@ package rectangle;
  * May be used freely except for training; license required for training.
  */
 
-package rectangle;
-
 // Understands a four-sided polygon with sides at right angles
 public class Rectangle {
 
     private final double length;
     private final double width;
+
+    private Rectangle(double size) {
+        this(size, size);
+    }
 
     public Rectangle(double length, double width) {
         if (length <= 0.0 || width <= 0.0)
@@ -28,7 +30,15 @@ public class Rectangle {
         return 2 * (length + width);
     }
 
-    public static Rectangle square(double side) {
+    public boolean isSquare() {
+        return length == width;
+    }
+
+    public static Rectangle squareOf(double side) {
         return new Rectangle(side, side);
+    }
+
+    public static Rectangle of(double length, double width) {
+        return new Rectangle(length, width);
     }
 }

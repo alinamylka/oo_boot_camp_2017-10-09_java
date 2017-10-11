@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rectangle/Rectangle.java" afterPath="$PROJECT_DIR$/src/rectangle/Rectangle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/rectangle/TestRectangle.java" afterPath="$PROJECT_DIR$/test/rectangle/TestRectangle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +54,8 @@
       <file leaf-file-name="TestRectangle.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/rectangle/TestRectangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+            <state relative-caret-position="572">
+              <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
               <folding>
                 <marker date="1507721844237" expanded="true" signature="1369:1377" ph="{...}" />
               </folding>
@@ -576,7 +574,7 @@
       <option name="presentableId" value="Default" />
       <updated>1507711918179</updated>
       <workItem from="1507711926865" duration="5994000" />
-      <workItem from="1507721286096" duration="553000" />
+      <workItem from="1507721286096" duration="605000" />
     </task>
     <task id="LOCAL-00004" summary="addition check for temperature">
       <created>1507713300092</created>
@@ -620,7 +618,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507721145416</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add square">
+      <created>1507721858125</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1507721858125</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -656,7 +661,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10968000" />
+    <option name="totallyTimeSpent" value="11020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -727,7 +732,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="addition check for temperature" />
-    <option name="LAST_COMMIT_MESSAGE" value="addition check for temperature" />
+    <MESSAGE value="add square" />
+    <option name="LAST_COMMIT_MESSAGE" value="add square" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1170,8 +1176,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/rectangle/TestRectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+        <state relative-caret-position="572">
+          <caret line="47" column="1" lean-forward="true" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
           <folding>
             <marker date="1507721844237" expanded="true" signature="1369:1377" ph="{...}" />
           </folding>

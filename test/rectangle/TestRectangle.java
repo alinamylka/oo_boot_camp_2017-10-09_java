@@ -26,6 +26,9 @@ public class TestRectangle {
 
         assertNotEquals(Orderable.sort(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0))
                 , Arrays.asList(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0)));
+
+        assertEquals(Orderable.sort(Rectangle.of(2.0, 8.0), Rectangle.of(4.0, 4.0))
+                , Arrays.asList(Rectangle.of(2.0, 8.0), Rectangle.of(4.0, 4.0)));
     }
 
     @Test

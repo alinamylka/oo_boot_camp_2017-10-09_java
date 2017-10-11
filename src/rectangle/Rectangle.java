@@ -45,7 +45,7 @@ public class Rectangle implements Orderable<Rectangle> {
 
     @Override
     public int isBetterThen(Rectangle other) {
-        return this.area() - other.area() > 0 ? 1 : -1;
+        return this.area() - other.area() >= 0 ? 1 : -1;
     }
 
     @Override

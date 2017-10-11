@@ -6,8 +6,10 @@
 package quantity;
 
 
+import utils.Orderable;
+
 // Understands a specific measurement
-public class Quantity<T extends Unit> {
+public class Quantity<T extends Unit> implements Orderable<Quantity> {
 
     private final static double TOLERANCE = 0.0000001;
 
@@ -50,5 +52,13 @@ public class Quantity<T extends Unit> {
                 "amount=" + amount +
                 ", unit=" + unit +
                 '}';
+    }
+
+    @Override
+    public int isBetterThen(Quantity other) {
+        if (!this.isCompatible(other)) {
+            throw new IllegalArgumentException("You can not compare if it is not compatible");
+        }
+        return amount - convertedAmount(other) >= 0 ? 1 : -1;
     }
 }

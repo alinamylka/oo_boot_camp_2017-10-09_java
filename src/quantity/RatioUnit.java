@@ -16,12 +16,12 @@ public class RatioUnit extends Unit {
     public static final RatioUnit FURLONG = new RatioUnit(220, YARD);
     public static final RatioUnit MILE = new RatioUnit(8, FURLONG);
 
-    public RatioUnit() {
+    RatioUnit() {
         super();
     }
 
-    public RatioUnit(int amount, RatioUnit ratioUnit) {
-        super(amount, ratioUnit);
+    RatioUnit(int amount, RatioUnit ratioUnit) {
+        super(amount, 0.0, ratioUnit);
     }
 
     @Override

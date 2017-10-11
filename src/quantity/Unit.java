@@ -17,17 +17,13 @@ public class Unit {
     private final double offset;
     private final Unit baseUnit;
 
-    protected Unit() {
+    Unit() {
         this.baseUnitRatio = 1.0;
         this.offset = 0.0;
         this.baseUnit = this;
     }
 
-    protected Unit(double relativeRatio, Unit relativeUnit) {
-        this(relativeRatio, 0.0, relativeUnit);
-    }
-
-    private Unit(double relativeRatio, double offset, Unit relativeUnit) {
+    Unit(double relativeRatio, double offset, Unit relativeUnit) {
         this.baseUnitRatio = relativeRatio * relativeUnit.baseUnitRatio;
         this.offset = offset;
         this.baseUnit = relativeUnit.baseUnit;

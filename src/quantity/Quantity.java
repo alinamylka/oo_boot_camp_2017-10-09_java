@@ -23,7 +23,7 @@ public class Quantity {
     public boolean equals(Object other) {
         if (this == other) return true;
         if (other == null || this.getClass() != other.getClass()) return false;
-        return this.equals((Quantity)other);
+        return this.equals((Quantity) other);
     }
 
     private boolean equals(Quantity other) {
@@ -45,14 +45,24 @@ public class Quantity {
     }
 
     public Quantity plus(Quantity other) {
+        unit.validateArithmeticOperation();
         return new Quantity(this.amount + this.convertedAmount(other), this.unit);
+    }
+
+    public Quantity minus(Quantity other) {
+        unit.validateArithmeticOperation();
+        return this.plus(other.negate());
     }
 
     public Quantity negate() {
         return new Quantity(-amount, unit);
     }
 
-    public Quantity minus(Quantity other) {
-        return this.plus(other.negate());
+    @Override
+    public String toString() {
+        return "Quantity{" +
+                "amount=" + amount +
+                ", unit=" + unit +
+                '}';
     }
 }

@@ -69,8 +69,33 @@ public class TestQuantity {
         assertEquals(TEASPOON.s(2), TABLESPOON.s(1).minus(TEASPOON.s(1)));
         assertEquals(QUART.s(0.5), TABLESPOON.s(6).plus(OUNCE.s(13)));
         assertEquals(TABLESPOON.s(-6), TABLESPOON.s(6).negate());
+
         assertEquals(PINT.s(-0.5), TABLESPOON.s(10).minus(OUNCE.s(13)));
         assertEquals(FOOT.s(-4), INCH.s(24).minus(YARD.s(2)));
+    }
+
+    @Test
+    public void additionNotSupportedCelsius() {
+        assertThrows(UnsupportedOperationException.class, () ->
+                CELSIUS.s(0).plus(CELSIUS.s(0)));
+    }
+
+    @Test
+    public void additionNotSupportedFahrenheit() {
+        assertThrows(UnsupportedOperationException.class, () ->
+                FAHRENHEIT.s(32).plus(FAHRENHEIT.s(32)));
+    }
+
+    @Test
+    public void subtractionNotSupportedCelsius() {
+        assertThrows(UnsupportedOperationException.class, () ->
+                CELSIUS.s(0).minus(CELSIUS.s(0)));
+    }
+
+    @Test
+    public void subtractionNotSupportedFahrenheit() {
+        assertThrows(UnsupportedOperationException.class, () ->
+                FAHRENHEIT.s(32).minus(FAHRENHEIT.s(32)));
     }
 
     @Test

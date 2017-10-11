@@ -33,6 +33,7 @@ public class TestRectangle {
         assertTrue(Rectangle.of(4, 4).isSquare());
     }
 
+
     @Test
     public void validParameters() {
         assertThrows(IllegalArgumentException.class, () -> {

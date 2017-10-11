@@ -12,12 +12,12 @@ public interface Orderable<T extends Orderable> {
     }
 
     static <T extends Orderable> T max(List<T> elements) {
-        T max = elements.get(0);
-        for (T element : elements) {
-            if (element.isBetterThen(max) > 0) {
-                max = element;
+        T champion = elements.get(0);
+        for (T challenger : elements) {
+            if (challenger.isBetterThen(champion) > 0) {
+                champion = challenger;
             }
         }
-        return max;
+        return champion;
     }
 }

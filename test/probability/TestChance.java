@@ -33,9 +33,9 @@ public class TestChance {
 
     @Test
     public void polymorphism() {
-        assertEquals(1, new HashSet<Chance>(
+        assertEquals(1, new HashSet<>(
                 Arrays.asList(LIKELY, new Chance(0.75))).size());
-        assertTrue(new HashSet<Chance>(
+        assertTrue(new HashSet<>(
                 Arrays.asList(LIKELY, new Chance(0.75)))
                 .contains(new Chance(0.75)));
     }

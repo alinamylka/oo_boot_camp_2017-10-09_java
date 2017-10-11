@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quantity/Quantity.java" afterPath="$PROJECT_DIR$/src/quantity/Quantity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/quantity/Unit.java" afterPath="$PROJECT_DIR$/src/quantity/Unit.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/quantity/TestQuantity.java" afterPath="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,31 +14,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Quantity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Quantity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
+            <state relative-caret-position="379">
+              <caret line="57" column="43" lean-forward="false" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
               <folding>
                 <element signature="e#628#644#0" expanded="true" />
-                <element signature="e#1506#1507#0" expanded="true" />
-                <element signature="e#1556#1557#0" expanded="true" />
-                <element signature="e#1619#1724#0" expanded="true" />
-                <element signature="e#1619#1724#0" expanded="true" />
-                <element signature="e#1619#1724#0" expanded="true" />
-                <element signature="e#1619#1724#0" expanded="true" />
-                <element signature="e#1619#1724#0" expanded="true" />
-                <element signature="e#1619#1724#0" expanded="true" />
+                <element signature="e#1663#1768#0" expanded="true" />
+                <element signature="e#1663#1768#0" expanded="true" />
+                <element signature="e#1663#1768#0" expanded="true" />
+                <element signature="e#1663#1768#0" expanded="true" />
+                <element signature="e#1663#1768#0" expanded="true" />
+                <element signature="e#1663#1768#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestQuantity.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestQuantity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="387">
-              <caret line="101" column="26" lean-forward="false" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+            <state relative-caret-position="245">
+              <caret line="79" column="37" lean-forward="false" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Assertions.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0-M4/junit-jupiter-api-5.0.0-M4.jar!/org/junit/jupiter/api/Assertions.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="435" column="42" lean-forward="false" selection-start-line="435" selection-start-column="42" selection-end-line="435" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -59,14 +65,14 @@
       <file leaf-file-name="Unit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/quantity/Unit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+            <state relative-caret-position="1071">
+              <caret line="71" column="94" lean-forward="false" selection-start-line="71" selection-start-column="94" selection-end-line="71" selection-end-column="94" />
               <folding>
-                <element signature="e#0#2600#0" expanded="true" />
-                <element signature="e#1449#1450#0" expanded="true" />
-                <element signature="e#1503#1504#0" expanded="true" />
-                <element signature="e#2351#2352#0" expanded="true" />
-                <element signature="e#2405#2406#0" expanded="true" />
+                <element signature="e#0#2621#0" expanded="true" />
+                <element signature="e#1462#1463#0" expanded="true" />
+                <element signature="e#1516#1517#0" expanded="true" />
+                <element signature="e#2370#2371#0" expanded="true" />
+                <element signature="e#2424#2425#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,8 +116,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
         <option value="$PROJECT_DIR$/src/quantity/Unit.java" />
+        <option value="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
         <option value="$PROJECT_DIR$/src/quantity/Quantity.java" />
       </list>
     </option>
@@ -234,6 +240,51 @@
               <item name="util" type="462c0819:PsiDirectoryNode" />
               <item name="stream" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="oo_boot_camp_2017-10-09_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0-M4" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2017-10-09_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0-M4" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-jupiter-api-5.0.0-M4.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2017-10-09_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0-M4" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-jupiter-api-5.0.0-M4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2017-10-09_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0-M4" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-jupiter-api-5.0.0-M4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2017-10-09_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0-M4" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-jupiter-api-5.0.0-M4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+              <item name="jupiter" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="oo_boot_camp_2017-10-09_java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.junit.jupiter:junit-jupiter-api:5.0.0-M4" type="70bed36:NamedLibraryElementNode" />
+              <item name="junit-jupiter-api-5.0.0-M4.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="junit" type="462c0819:PsiDirectoryNode" />
+              <item name="jupiter" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -258,7 +309,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestQuantity">
+  <component name="RunManager" selected="JUnit.TestQuantity.negationNotSupportedCelsius">
     <configuration name="TestQuantity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -284,31 +335,6 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="TestQuantity.arithmetic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="quantity.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="oo_boot_camp_2017-10-09_java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="quantity" />
-      <option name="MAIN_CLASS_NAME" value="quantity.TestQuantity" />
-      <option name="METHOD_NAME" value="arithmetic" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
     <configuration name="TestQuantity.arithmeticTemperatureZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -322,6 +348,31 @@
       <option name="PACKAGE_NAME" value="quantity" />
       <option name="MAIN_CLASS_NAME" value="quantity.TestQuantity" />
       <option name="METHOD_NAME" value="arithmeticTemperatureZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestQuantity.negationNotSupportedCelsius" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="quantity.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="oo_boot_camp_2017-10-09_java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="quantity" />
+      <option name="MAIN_CLASS_NAME" value="quantity.TestQuantity" />
+      <option name="METHOD_NAME" value="negationNotSupportedCelsius" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -466,19 +517,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestQuantity.arithmetic" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestQuantity.arithmeticTemperatureZero" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestQuantity.temperatureCommutativityAroundZero" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestQuantity.temperatureIdentityAroundZero" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestQuantity" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestQuantity.arithmeticTemperatureZero" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestQuantity.temperatureCommutativityAroundZero" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestQuantity.temperatureIdentityAroundZero" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestQuantity" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestQuantity.negationNotSupportedCelsius" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestQuantity" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestQuantity.temperatureIdentityAroundZero" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestQuantity.temperatureCommutativityAroundZero" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestQuantity.arithmeticTemperatureZero" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestQuantity.arithmetic" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestQuantity.negationNotSupportedCelsius" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestQuantity" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestQuantity.temperatureIdentityAroundZero" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestQuantity.temperatureCommutativityAroundZero" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestQuantity.arithmeticTemperatureZero" />
       </list>
     </recent_temporary>
   </component>
@@ -486,6 +537,21 @@
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="addition check for temperature">
+      <created>1507710122829</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1507710122829</updated>
+    </task>
+    <task id="LOCAL-00002" summary="addition check for temperature">
+      <created>1507710301798</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1507710301798</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -507,21 +573,21 @@
     <history-entry file="TestQuantity - 2017.10.11 at 10h 21m 17s.xml">
       <configuration name="TestQuantity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestQuantity_arithmeticTemperatureZero - 2017.10.11 at 09h 51m 06s.xml">
-      <configuration name="TestQuantity.arithmeticTemperatureZero" configurationId="JUnit" />
+    <history-entry file="TestQuantity - 2017.10.11 at 10h 24m 06s.xml">
+      <configuration name="TestQuantity" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestQuantity_temperatureCommutativityAroundZero - 2017.10.11 at 09h 51m 11s.xml">
-      <configuration name="TestQuantity.temperatureCommutativityAroundZero" configurationId="JUnit" />
+    <history-entry file="TestQuantity_negationNotSupportedCelsius - 2017.10.11 at 10h 28m 38s.xml">
+      <configuration name="TestQuantity.negationNotSupportedCelsius" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestQuantity_temperatureCommutativityAroundZero - 2017.10.11 at 09h 52m 19s.xml">
-      <configuration name="TestQuantity.temperatureCommutativityAroundZero" configurationId="JUnit" />
+    <history-entry file="TestQuantity_negationNotSupportedCelsius - 2017.10.11 at 10h 29m 45s.xml">
+      <configuration name="TestQuantity.negationNotSupportedCelsius" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestQuantity_temperatureIdentityAroundZero - 2017.10.11 at 09h 53m 26s.xml">
       <configuration name="TestQuantity.temperatureIdentityAroundZero" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3150000" />
+    <option name="totallyTimeSpent" value="3662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -535,12 +601,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14070891" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.20858283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.58483034" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20758483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295238" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21213749" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" x="1290" y="59" width="294" height="766" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16487648" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -598,18 +664,15 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="addition check for temperature" />
+    <option name="LAST_COMMIT_MESSAGE" value="addition check for temperature" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/rectangle/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/rectangle/TestRectangle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -763,14 +826,12 @@
           <caret line="63" column="21" lean-forward="true" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
           <folding>
             <element signature="e#628#644#0" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -780,11 +841,11 @@
         <state relative-caret-position="-226">
           <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <element signature="e#0#2600#0" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#2351#2352#0" expanded="true" />
-            <element signature="e#2405#2406#0" expanded="true" />
+            <element signature="e#0#2621#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#2370#2371#0" expanded="true" />
+            <element signature="e#2424#2425#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -833,14 +894,12 @@
           <caret line="35" column="27" lean-forward="true" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding>
             <element signature="e#628#644#0" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -850,11 +909,11 @@
         <state relative-caret-position="966">
           <caret line="51" column="100" lean-forward="false" selection-start-line="51" selection-start-column="100" selection-end-line="51" selection-end-column="100" />
           <folding>
-            <element signature="e#0#2600#0" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#2351#2352#0" expanded="true" />
-            <element signature="e#2405#2406#0" expanded="true" />
+            <element signature="e#0#2621#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#2370#2371#0" expanded="true" />
+            <element signature="e#2424#2425#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1050,41 +1109,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/quantity/Unit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+        <state relative-caret-position="1071">
+          <caret line="71" column="94" lean-forward="false" selection-start-line="71" selection-start-column="94" selection-end-line="71" selection-end-column="94" />
           <folding>
-            <element signature="e#0#2600#0" expanded="true" />
-            <element signature="e#1449#1450#0" expanded="true" />
-            <element signature="e#1503#1504#0" expanded="true" />
-            <element signature="e#2351#2352#0" expanded="true" />
-            <element signature="e#2405#2406#0" expanded="true" />
+            <element signature="e#0#2621#0" expanded="true" />
+            <element signature="e#1462#1463#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#2370#2371#0" expanded="true" />
+            <element signature="e#2424#2425#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.java">
+    <entry file="jar://$USER_HOME$/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0-M4/junit-jupiter-api-5.0.0-M4.jar!/org/junit/jupiter/api/Assertions.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="58" column="5" lean-forward="true" selection-start-line="58" selection-start-column="5" selection-end-line="58" selection-end-column="5" />
-          <folding>
-            <element signature="e#628#644#0" expanded="true" />
-            <element signature="e#1506#1507#0" expanded="true" />
-            <element signature="e#1556#1557#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-            <element signature="e#1619#1724#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="254">
+          <caret line="435" column="42" lean-forward="false" selection-start-line="435" selection-start-column="42" selection-end-line="435" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/quantity/TestQuantity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="101" column="26" lean-forward="false" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
+        <state relative-caret-position="245">
+          <caret line="79" column="37" lean-forward="false" selection-start-line="79" selection-start-column="37" selection-end-line="79" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="57" column="43" lean-forward="false" selection-start-line="57" selection-start-column="43" selection-end-line="57" selection-end-column="43" />
+          <folding>
+            <element signature="e#628#644#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+            <element signature="e#1663#1768#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

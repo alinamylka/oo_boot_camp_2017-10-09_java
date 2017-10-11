@@ -55,6 +55,7 @@ public class Quantity {
     }
 
     public Quantity negate() {
+        unit.validateArithmeticOperation();
         return new Quantity(-amount, unit);
     }
 

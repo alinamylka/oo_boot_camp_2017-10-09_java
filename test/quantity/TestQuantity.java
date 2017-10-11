@@ -75,6 +75,12 @@ public class TestQuantity {
     }
 
     @Test
+    public void negationNotSupportedCelsius() {
+        assertThrows(UnsupportedOperationException.class, () ->
+                FAHRENHEIT.s(-32).negate());
+    }
+
+    @Test
     public void additionNotSupportedCelsius() {
         assertThrows(UnsupportedOperationException.class, () ->
                 CELSIUS.s(0).plus(CELSIUS.s(0)));

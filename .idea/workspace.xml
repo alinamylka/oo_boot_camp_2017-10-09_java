@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rectangle/Rectangle.java" afterPath="$PROJECT_DIR$/src/rectangle/Rectangle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/rectangle/TestRectangle.java" afterPath="$PROJECT_DIR$/test/rectangle/TestRectangle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -629,7 +627,7 @@
       <option name="presentableId" value="Default" />
       <updated>1507711918179</updated>
       <workItem from="1507711926865" duration="5994000" />
-      <workItem from="1507721286096" duration="2798000" />
+      <workItem from="1507721286096" duration="2815000" />
     </task>
     <task id="LOCAL-00004" summary="addition check for temperature">
       <created>1507713300092</created>
@@ -694,7 +692,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507723231206</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add sort for Rectangle.java">
+      <created>1507724121971</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1507724121971</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -730,7 +735,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13213000" />
+    <option name="totallyTimeSpent" value="13230000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -802,7 +807,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="addition check for temperature" />
     <MESSAGE value="add square" />
-    <option name="LAST_COMMIT_MESSAGE" value="add square" />
+    <MESSAGE value="add sort for Rectangle.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="add sort for Rectangle.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

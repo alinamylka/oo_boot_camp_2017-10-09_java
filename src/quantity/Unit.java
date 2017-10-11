@@ -10,7 +10,7 @@ import java.util.Objects;
 // Understands a specific metric
 public class Unit {
 
-    public static final Unit TEASPOON = new Unit(true);
+    public static final Unit TEASPOON = new Unit(false);
     public static final Unit TABLESPOON = new Unit(3, TEASPOON);
     public static final Unit OUNCE = new Unit(2, TABLESPOON);
     public static final Unit CUP = new Unit(8, OUNCE);
@@ -18,22 +18,22 @@ public class Unit {
     public static final Unit QUART = new Unit(2, PINT);
     public static final Unit GALLON = new Unit(4, QUART);
 
-    public static final Unit INCH = new Unit(true);
+    public static final Unit INCH = new Unit(false);
     public static final Unit FOOT = new Unit(12, INCH);
     public static final Unit YARD = new Unit(3, FOOT);
     public static final Unit FURLONG = new Unit(220, YARD);
     public static final Unit MILE = new Unit(8, FURLONG);
 
-    public static final Unit CELSIUS = new Unit(false);
+    public static final Unit CELSIUS = new Unit(true);
     public static final Unit FAHRENHEIT = new Unit(5 / 9.0, 32, CELSIUS);
 
     private final double baseUnitRatio;
     private final double offset;
     private final Unit baseUnit;
-    private final boolean supportsArithmetic;
+    private final boolean notSupportsArithmetic;
 
-    private Unit(boolean supportsArithmetic) {
-        this.supportsArithmetic = supportsArithmetic;
+    private Unit(boolean notSupportsArithmetic) {
+        this.notSupportsArithmetic = notSupportsArithmetic;
         this.baseUnitRatio = 1.0;
         this.offset = 0.0;
         this.baseUnit = this;
@@ -44,7 +44,7 @@ public class Unit {
     }
 
     private Unit(double relativeRatio, double offset, Unit relativeUnit) {
-        this.supportsArithmetic = relativeUnit.supportsArithmetic;
+        this.notSupportsArithmetic = relativeUnit.notSupportsArithmetic;
         this.baseUnitRatio = relativeRatio * relativeUnit.baseUnitRatio;
         this.offset = offset;
         this.baseUnit = relativeUnit.baseUnit;
@@ -68,7 +68,7 @@ public class Unit {
     }
 
     void validateArithmeticOperation() {
-        if (!supportsArithmetic) {
+        if (notSupportsArithmetic) {
             throw new UnsupportedOperationException("Arithmetic is not supported for this unit");
         }
     }

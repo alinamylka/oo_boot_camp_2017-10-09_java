@@ -100,4 +100,12 @@ public class TestQuantity {
         assertEquals(FAHRENHEIT.s(212), CELSIUS.s(100));
     }
 
+    @Test
+    public void temperatureDoesNotCompile() {
+//        CELSIUS.s(10).plus(CELSIUS.s(20));
+//        FAHRENHEIT.s(10).plus(FAHRENHEIT.s(20));
+//        FAHRENHEIT.s(10).plus(CELSIUS.s(20));
+//        FAHRENHEIT.s(10).negate();
+    }
+
 }

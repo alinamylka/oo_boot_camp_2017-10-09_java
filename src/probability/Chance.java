@@ -5,7 +5,6 @@
 
 package probability;
 
-import com.sun.org.apache.xpath.internal.operations.Or;
 import utils.Orderable;
 
 import java.util.Objects;
@@ -28,7 +27,7 @@ public class Chance implements Orderable<Chance> {
     public boolean equals(Object other) {
         if (this == other) return true;
         if (other == null || this.getClass() != other.getClass()) return false;
-        return this.equals((Chance)other);
+        return this.equals((Chance) other);
     }
 
     private boolean equals(Chance other) {
@@ -55,6 +54,6 @@ public class Chance implements Orderable<Chance> {
 
     @Override
     public int isBetterThen(Chance other) {
-        return this.fraction - other.fraction >=0 ? 1 : -1;
+        return this.fraction - other.fraction >= 0 ? 1 : -1;
     }
 }

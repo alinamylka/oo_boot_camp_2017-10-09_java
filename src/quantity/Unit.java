@@ -16,6 +16,7 @@ public class Unit {
     private final double baseUnitRatio;
     private final double offset;
     private final Unit baseUnit;
+
     Unit() {
         this.baseUnitRatio = 1.0;
         this.offset = 0.0;

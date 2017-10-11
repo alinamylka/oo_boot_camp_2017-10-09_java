@@ -15,4 +15,12 @@ public interface Orderable<T extends Orderable> {
     static <T extends Orderable> List<T> sort(List<T> elements) {
         return elements.stream().sorted(Orderable::isBetterThen).collect(Collectors.toList());
     }
+
+    static <T extends Orderable> T max(T... elements) {
+        return max(Arrays.asList(elements));
+    }
+
+    static <T extends Orderable> T max(List<T> elements) {
+        return elements.stream().max(Orderable::isBetterThen).get();
+    }
 }

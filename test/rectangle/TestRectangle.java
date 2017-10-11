@@ -20,6 +20,13 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class TestRectangle {
 
     @Test
+    public void max() {
+        assertEquals(Orderable.max(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0))
+                , Rectangle.squareOf(4.0));
+
+    }
+
+    @Test
     public void sort() {
         assertEquals(Orderable.sort(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0))
             , Arrays.asList(Rectangle.squareOf(2.0), Rectangle.squareOf(4.0)));

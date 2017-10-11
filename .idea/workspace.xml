@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/probability/TestChance.java" afterPath="$PROJECT_DIR$/test/probability/TestChance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/quantity/TestQuantity.java" afterPath="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/rectangle/TestRectangle.java" afterPath="$PROJECT_DIR$/test/rectangle/TestRectangle.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="Unit.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/quantity/Unit.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -27,7 +24,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Orderable.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Orderable.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/Orderable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="126">
@@ -44,7 +41,7 @@
       <file leaf-file-name="Stream.java" pinned="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/../../../jdk/jdk1.8_64/src.zip!/java/util/stream/Stream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="903">
+            <state relative-caret-position="16653">
               <caret line="839" column="16" lean-forward="false" selection-start-line="839" selection-start-column="16" selection-end-line="839" selection-end-column="16" />
               <folding />
             </state>
@@ -74,7 +71,7 @@
       <file leaf-file-name="Quantity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
+            <state relative-caret-position="1029">
               <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
               <folding>
                 <element signature="e#958#959#0" expanded="true" />
@@ -84,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestRectangle.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestRectangle.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/rectangle/TestRectangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+            <state relative-caret-position="147">
+              <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#535#536#0" expanded="true" />
@@ -109,26 +106,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestChance.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/probability/TestChance.java">
+      <file leaf-file-name="Chance.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="83" column="33" lean-forward="false" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
-              <folding />
+            <state relative-caret-position="609">
+              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Chance.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
+      <file leaf-file-name="Rectangle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/rectangle/Rectangle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+            <state relative-caret-position="105">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#938#952#0" expanded="true" />
-                <element signature="e#1634#1635#0" expanded="true" />
-                <element signature="e#1701#1702#0" expanded="true" />
+                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#236#237#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -139,8 +136,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -176,7 +173,6 @@
         <option value="$PROJECT_DIR$/src/utils/Comparable.java" />
         <option value="$PROJECT_DIR$/test/utils/ComparableTest.java" />
         <option value="$PROJECT_DIR$/src/polygon/Rectangle.java" />
-        <option value="$PROJECT_DIR$/src/rectangle/Rectangle.java" />
         <option value="$PROJECT_DIR$/src/quantity/Unit.java" />
         <option value="$PROJECT_DIR$/src/probability/Chance.java" />
         <option value="$PROJECT_DIR$/src/quantity/Quantity.java" />
@@ -184,6 +180,8 @@
         <option value="$PROJECT_DIR$/test/quantity/TestQuantity.java" />
         <option value="$PROJECT_DIR$/test/probability/TestChance.java" />
         <option value="$PROJECT_DIR$/test/rectangle/TestRectangle.java" />
+        <option value="$PROJECT_DIR$/src/probability/Rectangle.java" />
+        <option value="$PROJECT_DIR$/src/rectangle/Rectangle.java" />
       </list>
     </option>
   </component>
@@ -397,14 +395,15 @@
     <key name="MoveMembersDialog.RECENTS_KEY">
       <recent name="quantity.IntervalUnit" />
     </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="rectangle" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="probability" />
       <recent name="quantity" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -423,7 +422,7 @@
     <configuration name="TestChance.max" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="probability.*" />
+          <option name="PATTERN" value="rectangle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -643,6 +642,11 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -677,7 +681,9 @@
       <workItem from="1507711926865" duration="5994000" />
       <workItem from="1507721286096" duration="2983000" />
       <workItem from="1507724318149" duration="947000" />
-      <workItem from="1507725371309" duration="2063000" />
+      <workItem from="1507725371309" duration="2370000" />
+      <workItem from="1507727823994" duration="52000" />
+      <workItem from="1507727956900" duration="23000" />
     </task>
     <task id="LOCAL-00004" summary="addition check for temperature">
       <created>1507713300092</created>
@@ -805,7 +811,21 @@
       <option name="project" value="LOCAL" />
       <updated>1507727052968</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add max rectangle">
+      <created>1507727462470</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1507727462470</updated>
+    </task>
+    <task id="LOCAL-00023" summary="add max rectangle">
+      <created>1507727975051</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1507727975051</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -841,14 +861,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16408000" />
+    <option name="totallyTimeSpent" value="16790000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38123754" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -859,7 +878,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2781955" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" x="1290" y="59" width="294" height="766" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2867884" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" x="1290" y="59" width="294" height="766" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13641246" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -867,10 +886,12 @@
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18904404" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38123754" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934132" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -922,13 +943,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$PROJECT_DIR$/../../../jdk/jdk1.8_64/src.zip!/java/lang/Double.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="998" column="22" lean-forward="false" selection-start-line="998" selection-start-column="22" selection-end-line="998" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../../jdk/jdk1.8_64/src.zip!/java/util/Collection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-5257">
@@ -960,10 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-          <folding>
-            <element signature="e#592#593#0" expanded="false" />
-            <element signature="e#615#616#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1034,12 +1044,8 @@
         <state relative-caret-position="504">
           <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding>
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#964#965#0" expanded="false" />
-            <element signature="e#1027#1028#0" expanded="false" />
-            <element signature="e#1078#1079#0" expanded="false" />
-            <element signature="e#1140#1141#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1084,9 +1090,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#938#952#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-            <element signature="e#1701#1702#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1244,25 +1247,8 @@
         <state relative-caret-position="363">
           <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#964#965#0" expanded="false" />
-            <element signature="e#1027#1028#0" expanded="false" />
-            <element signature="e#1078#1079#0" expanded="false" />
-            <element signature="e#1140#1141#0" expanded="false" />
-            <element signature="e#1203#1204#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#938#952#0" expanded="true" />
-            <element signature="e#1634#1635#0" expanded="true" />
-            <element signature="e#1701#1702#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1285,7 +1271,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/quantity/Quantity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
+        <state relative-caret-position="1029">
           <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
           <folding>
             <element signature="e#958#959#0" expanded="true" />
@@ -1312,9 +1298,22 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../../jdk/jdk1.8_64/src.zip!/java/util/stream/Stream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="903">
+        <state relative-caret-position="16653">
           <caret line="839" column="16" lean-forward="false" selection-start-line="839" selection-start-column="16" selection-end-line="839" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/rectangle/TestRectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="16" column="28" lean-forward="false" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#535#536#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <marker date="1507727457674" expanded="true" signature="1536:1544" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1326,6 +1325,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/probability/Chance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rectangle/Rectangle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+          <folding>
+            <element signature="e#204#205#0" expanded="true" />
+            <element signature="e#236#237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/Orderable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -1334,19 +1354,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#241#242#0" expanded="true" />
             <element signature="e#292#293#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/rectangle/TestRectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <marker date="1507727457674" expanded="true" signature="1536:1544" ph="{...}" />
           </folding>
         </state>
       </provider>

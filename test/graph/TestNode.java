@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class NodeTest {
+public class TestNode {
     private final static Node A, B, C, D, E, F, G;
 
     static {
@@ -23,7 +23,7 @@ class NodeTest {
     }
 
     @Test
-    void canReach() {
+    public void canReach() {
         assertTrue(B.canReach(B));
         assertTrue(B.canReach(A));
         assertTrue(B.canReach(F));

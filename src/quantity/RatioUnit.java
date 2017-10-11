@@ -24,6 +24,7 @@ public class RatioUnit extends Unit {
         super(amount, ratioUnit);
     }
 
+    @Override
     public RatioQuantity s(double amount) {
         return new RatioQuantity(amount, this);
     }

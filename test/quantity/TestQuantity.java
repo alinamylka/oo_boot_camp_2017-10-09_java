@@ -6,6 +6,9 @@
 package quantity;
 
 import org.junit.jupiter.api.Test;
+import probability.Chance;
+import rectangle.Rectangle;
+import utils.Orderable;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -99,13 +102,4 @@ public class TestQuantity {
         assertEquals(CELSIUS.s(100), FAHRENHEIT.s(212));
         assertEquals(FAHRENHEIT.s(212), CELSIUS.s(100));
     }
-
-    @Test
-    public void temperatureDoesNotCompile() {
-//        CELSIUS.s(10).plus(CELSIUS.s(20));
-//        FAHRENHEIT.s(10).plus(FAHRENHEIT.s(20));
-//        FAHRENHEIT.s(10).plus(CELSIUS.s(20));
-//        FAHRENHEIT.s(10).negate();
-    }
-
 }

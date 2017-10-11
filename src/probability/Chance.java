@@ -5,10 +5,13 @@
 
 package probability;
 
+import com.sun.org.apache.xpath.internal.operations.Or;
+import utils.Orderable;
+
 import java.util.Objects;
 
 // Understands the likelihood of something specific happening
-public class Chance {
+public class Chance implements Orderable<Chance> {
 
     private final static double CERTAIN_FRACTION = 1.0;
     private final static double TOLERANCE = 0.0000001;
@@ -48,5 +51,10 @@ public class Chance {
     // Implemented with DeMorgan's Law https://en.wikipedia.org/wiki/De_Morgan%27s_laws
     public Chance or(Chance other) {
         return (this.not().and(other.not())).not();
+    }
+
+    @Override
+    public int isBetterThen(Chance other) {
+        return this.fraction - other.fraction >=0 ? 1 : -1;
     }
 }

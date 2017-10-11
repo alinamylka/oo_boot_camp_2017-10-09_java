@@ -6,6 +6,8 @@
 package probability;
 
 import org.junit.jupiter.api.Test;
+import rectangle.Rectangle;
+import utils.Orderable;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -75,6 +77,12 @@ public class TestChance {
     public void validParameters() {
         assertThrows(IllegalArgumentException.class, () -> { new Chance(1.1); });
         assertThrows(IllegalArgumentException.class, () -> { new Chance(-0.1); });
+    }
+
+    @Test
+    public void max() {
+        assertEquals(Orderable.max(new Chance(0.8125),  new Chance(0.1), new Chance(0.5))
+                , new Chance(0.8125));
     }
 
 }

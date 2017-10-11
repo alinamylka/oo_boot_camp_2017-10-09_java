@@ -8,11 +8,8 @@ package rectangle;
 import org.junit.jupiter.api.Test;
 import utils.Orderable;
 
-import java.util.Arrays;
-
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
@@ -24,18 +21,6 @@ public class TestRectangle {
         assertEquals(Orderable.max(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0))
                 , Rectangle.squareOf(4.0));
 
-    }
-
-    @Test
-    public void sort() {
-        assertEquals(Orderable.sort(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0))
-            , Arrays.asList(Rectangle.squareOf(2.0), Rectangle.squareOf(4.0)));
-
-        assertNotEquals(Orderable.sort(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0))
-                , Arrays.asList(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0)));
-
-        assertEquals(Orderable.sort(Rectangle.of(2.0, 8.0), Rectangle.of(4.0, 4.0))
-                , Arrays.asList(Rectangle.of(2.0, 8.0), Rectangle.of(4.0, 4.0)));
     }
 
     @Test

@@ -5,7 +5,6 @@
 
 package quantity;
 
-
 // Understands a specific ratio measurement
 public class RatioQuantity extends Quantity<RatioUnit> {
 

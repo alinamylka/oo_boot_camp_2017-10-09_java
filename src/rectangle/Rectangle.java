@@ -7,10 +7,6 @@ public class Rectangle implements Orderable<Rectangle> {
     private final double length;
     private final double width;
 
-    private Rectangle(double size) {
-        this(size, size);
-    }
-
     public Rectangle(double length, double width) {
         if (length <= 0.0 || width <= 0.0)
             throw new IllegalArgumentException("Dimensions must be > 0");

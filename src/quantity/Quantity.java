@@ -7,14 +7,14 @@ package quantity;
 
 
 // Understands a specific measurement
-public class Quantity {
+public class Quantity<T extends Unit> {
 
     private final static double TOLERANCE = 0.0000001;
 
-    private final double amount;
-    private final Unit unit;
+    protected final double amount;
+    protected final T unit;
 
-    Quantity(double amount, Unit unit) {
+    Quantity(double amount, T unit) {
         this.amount = amount;
         this.unit = unit;
     }
@@ -35,28 +35,13 @@ public class Quantity {
         return this.unit.isCompatible(other.unit);
     }
 
-    private double convertedAmount(Quantity other) {
+    protected double convertedAmount(Quantity other) {
         return this.unit.convertedAmount(other.amount, other.unit);
     }
 
     @Override
     public int hashCode() {
         return unit.hashCode(amount);
-    }
-
-    public Quantity plus(Quantity other) {
-        unit.validateArithmeticOperation();
-        return new Quantity(this.amount + this.convertedAmount(other), this.unit);
-    }
-
-    public Quantity minus(Quantity other) {
-        unit.validateArithmeticOperation();
-        return this.plus(other.negate());
-    }
-
-    public Quantity negate() {
-        unit.validateArithmeticOperation();
-        return new Quantity(-amount, unit);
     }
 
     @Override

@@ -14,20 +14,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
+import static quantity.RatioUnit.CUP;
+import static quantity.RatioUnit.FOOT;
+import static quantity.RatioUnit.FURLONG;
+import static quantity.RatioUnit.GALLON;
+import static quantity.RatioUnit.INCH;
+import static quantity.RatioUnit.MILE;
+import static quantity.RatioUnit.OUNCE;
+import static quantity.RatioUnit.PINT;
+import static quantity.RatioUnit.QUART;
+import static quantity.RatioUnit.TABLESPOON;
+import static quantity.RatioUnit.TEASPOON;
+import static quantity.RatioUnit.YARD;
 import static quantity.Unit.CELSIUS;
-import static quantity.Unit.CUP;
 import static quantity.Unit.FAHRENHEIT;
-import static quantity.Unit.FOOT;
-import static quantity.Unit.FURLONG;
-import static quantity.Unit.GALLON;
-import static quantity.Unit.INCH;
-import static quantity.Unit.MILE;
-import static quantity.Unit.OUNCE;
-import static quantity.Unit.PINT;
-import static quantity.Unit.QUART;
-import static quantity.Unit.TABLESPOON;
-import static quantity.Unit.TEASPOON;
-import static quantity.Unit.YARD;
 
 // Ensures that Quantity operates correctly
 public class TestQuantity {
@@ -72,36 +72,6 @@ public class TestQuantity {
 
         assertEquals(PINT.s(-0.5), TABLESPOON.s(10).minus(OUNCE.s(13)));
         assertEquals(FOOT.s(-4), INCH.s(24).minus(YARD.s(2)));
-    }
-
-    @Test
-    public void negationNotSupportedCelsius() {
-        assertThrows(UnsupportedOperationException.class, () ->
-                FAHRENHEIT.s(-32).negate());
-    }
-
-    @Test
-    public void additionNotSupportedCelsius() {
-        assertThrows(UnsupportedOperationException.class, () ->
-                CELSIUS.s(0).plus(CELSIUS.s(0)));
-    }
-
-    @Test
-    public void additionNotSupportedFahrenheit() {
-        assertThrows(UnsupportedOperationException.class, () ->
-                FAHRENHEIT.s(32).plus(FAHRENHEIT.s(32)));
-    }
-
-    @Test
-    public void subtractionNotSupportedCelsius() {
-        assertThrows(UnsupportedOperationException.class, () ->
-                CELSIUS.s(0).minus(CELSIUS.s(0)));
-    }
-
-    @Test
-    public void subtractionNotSupportedFahrenheit() {
-        assertThrows(UnsupportedOperationException.class, () ->
-                FAHRENHEIT.s(32).minus(FAHRENHEIT.s(32)));
     }
 
     @Test

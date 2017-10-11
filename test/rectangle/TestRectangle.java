@@ -6,14 +6,28 @@
 package rectangle;
 
 import org.junit.jupiter.api.Test;
+import utils.Orderable;
+
+import java.util.Arrays;
 
 import static junit.framework.TestCase.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 // Confirms the behavior of a Rectangle
 public class TestRectangle {
+
+    @Test
+    public void sort() {
+        assertEquals(Orderable.sort(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0))
+            , Arrays.asList(Rectangle.squareOf(2.0), Rectangle.squareOf(4.0)));
+
+        assertNotEquals(Orderable.sort(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0))
+                , Arrays.asList(Rectangle.squareOf(4.0), Rectangle.squareOf(2.0)));
+    }
+
     @Test
     public void area() {
         assertEquals(24.0, Rectangle.of(4.0, 6.0).area());

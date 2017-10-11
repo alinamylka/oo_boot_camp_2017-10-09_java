@@ -4,8 +4,10 @@ package rectangle;
  * May be used freely except for training; license required for training.
  */
 
+import utils.Orderable;
+
 // Understands a four-sided polygon with sides at right angles
-public class Rectangle {
+public class Rectangle implements Orderable<Rectangle> {
 
     private final double length;
     private final double width;
@@ -39,5 +41,32 @@ public class Rectangle {
 
     public static Rectangle of(double length, double width) {
         return new Rectangle(length, width);
+    }
+
+    @Override
+    public int isBetterThen(Rectangle other) {
+        return this.area() - other.area() > 0 ? 1 : -1;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Rectangle rectangle = (Rectangle) o;
+
+        if (Double.compare(rectangle.length, length) != 0) return false;
+        return Double.compare(rectangle.width, width) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        int result;
+        long temp;
+        temp = Double.doubleToLongBits(length);
+        result = (int) (temp ^ (temp >>> 32));
+        temp = Double.doubleToLongBits(width);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
+        return result;
     }
 }

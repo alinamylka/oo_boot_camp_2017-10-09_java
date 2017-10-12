@@ -45,14 +45,11 @@ public class TestNode {
         assertEquals(1, B.hopCount(F).get().intValue());
         assertEquals(2, B.hopCount(D).get().intValue());
 
-
         assertFalse(A.hopCount(B).isPresent());
         assertFalse(B.hopCount(G).isPresent());
         assertFalse(G.hopCount(B).isPresent());
 
-
-        Object result = C.hopCount(F).get();
-        assertTrue(Arrays.asList(3, 4).contains(result));
+        assertTrue(Arrays.asList(3, 4).contains(C.hopCount(F).get().intValue()));
 
         assertFalse(A.hopCount(B).isPresent());
         assertFalse(B.hopCount(G).isPresent());

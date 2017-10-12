@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e143ce9-f0fe-402d-b4db-18ecb99035d3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/oo_boot_camp_2017-10-09_java.iml" afterPath="$PROJECT_DIR$/oo_boot_camp_2017-10-09_java.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/graph/Node.java" afterPath="$PROJECT_DIR$/src/graph/Node.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/graph/TestNode.java" afterPath="$PROJECT_DIR$/test/graph/TestNode.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -51,13 +47,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graph/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+            <state relative-caret-position="548">
+              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
               <folding>
                 <element signature="e#0#1223#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,15 +83,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestNode.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestNode.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/graph/TestNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="42" column="53" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="53" />
+            <state relative-caret-position="398">
+              <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1412#1431#0" expanded="true" />
-                <element signature="e#1412#1431#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,8 +166,8 @@
         <option value="$PROJECT_DIR$/src/graph/Visitor.java" />
         <option value="$PROJECT_DIR$/src/graph/NodeVisitor.java" />
         <option value="$PROJECT_DIR$/src/graph/Path.java" />
-        <option value="$PROJECT_DIR$/test/graph/TestNode.java" />
         <option value="$PROJECT_DIR$/src/graph/Node.java" />
+        <option value="$PROJECT_DIR$/test/graph/TestNode.java" />
       </list>
     </option>
   </component>
@@ -805,16 +800,17 @@
       <option name="project" value="LOCAL" />
       <updated>1507795335991</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added java9">
+      <created>1507796015923</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1507796015923</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNode - 2017.10.12 at 09h 44m 54s.xml">
-      <configuration name="TestNode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestNode_hopCount - 2017.10.12 at 09h 44m 34s.xml">
-      <configuration name="TestNode.hopCount" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestNode_hopCount - 2017.10.12 at 09h 45m 15s.xml">
       <configuration name="TestNode.hopCount" configurationId="JUnit" />
     </history-entry>
@@ -839,9 +835,15 @@
     <history-entry file="TestNode_hopCount - 2017.10.12 at 10h 13m 08s.xml">
       <configuration name="TestNode.hopCount" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestNode_hopCount - 2017.10.12 at 10h 14m 56s.xml">
+      <configuration name="TestNode.hopCount" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNode_hopCount - 2017.10.12 at 10h 15m 11s.xml">
+      <configuration name="TestNode.hopCount" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27509000" />
+    <option name="totallyTimeSpent" value="27628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -855,7 +857,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14070891" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3253493" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41217566" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.248503" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -940,7 +942,8 @@
     <MESSAGE value="add max rectangle" />
     <MESSAGE value="rectangle" />
     <MESSAGE value="added java8" />
-    <option name="LAST_COMMIT_MESSAGE" value="added java8" />
+    <MESSAGE value="added java9" />
+    <option name="LAST_COMMIT_MESSAGE" value="added java9" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1273,18 +1276,6 @@
     <entry file="file://$PROJECT_DIR$/src/graph/Link.java" />
     <entry file="file://$PROJECT_DIR$/src/graph/NodeVisitor.java" />
     <entry file="file://$PROJECT_DIR$/src/graph/Path.java" />
-    <entry file="file://$PROJECT_DIR$/test/graph/TestNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="42" column="53" lean-forward="false" selection-start-line="42" selection-start-column="38" selection-end-line="42" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1412#1431#0" expanded="true" />
-            <element signature="e#1412#1431#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="664">
@@ -1298,10 +1289,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/graph/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        <state relative-caret-position="548">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
           <folding>
             <element signature="e#0#1223#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/graph/TestNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

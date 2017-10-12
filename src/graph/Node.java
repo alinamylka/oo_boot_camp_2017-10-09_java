@@ -12,6 +12,7 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.function.BiFunction;
 
+//Understands neighbours
 public class Node {
 
     private static final int NO_HOP = 0;

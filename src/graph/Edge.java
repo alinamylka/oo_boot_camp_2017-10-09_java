@@ -10,7 +10,7 @@ public class Edge {
 
     private static final int ONE_HOP = 1;
     private final Node neighbor;
-   public final int cost;
+    public final int cost;
 
     public Edge(Node neighbor, int cost) {
 
@@ -26,7 +26,7 @@ public class Edge {
         return n -> n + ONE_HOP;
     }
 
-    Optional<Integer> cost(Node destination, Set<Node> visitedNodes, Function<Integer, Integer> strategy) {
+    Optional<Integer> visit(Node destination, Set<Node> visitedNodes, Function<Integer, Integer> strategy) {
         return neighbor.cost(destination, new HashSet<>(visitedNodes)).map(strategy);
     }
 

@@ -14,10 +14,10 @@ import java.util.function.BiFunction;
 
 //Understands neighbours
 public class Node {
-    private final List<Edge> neighbors = new ArrayList<>();
+    private final List<Edge> edges = new ArrayList<>();
 
     public Node to(Node neighbor, int cost) {
-        neighbors.add(new Edge(neighbor, cost));
+        edges.add(new Edge(neighbor, cost));
         return neighbor;
     }
 
@@ -37,8 +37,8 @@ public class Node {
         if (this == destination) return Optional.of(0.0);
         if (visitedNodes.contains(this)) return Optional.empty();
         visitedNodes.add(this);
-        return neighbors.stream()
-                .flatMap(n -> n.visit(destination, new HashSet<>(visitedNodes), strategy).stream())
+        return edges.stream()
+                .flatMap(edge -> edge.visit(destination, new HashSet<>(visitedNodes), strategy).stream())
                 .min(Double::compare);
     }
 

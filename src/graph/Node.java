@@ -29,20 +29,20 @@ public class Node {
     }
 
     public Optional<Integer> hopCount(Node destination) {
-        double result = findDestination(destination, Set.of(), HOP_STRATEGY);
+        double result = cost(destination, Set.of(), HOP_STRATEGY);
         return result == UNREACHABLE ? Optional.empty() : Optional.of((int) result);
     }
 
     public Optional<Double> cost(Node destination) {
-        double result = findDestination(destination, Set.of(), COST_STRATEGY);
+        double result = cost(destination, Set.of(), COST_STRATEGY);
         return result == UNREACHABLE ? Optional.empty() : Optional.of(result);
     }
 
-    double findDestination(Node destination, Set<Node> visitedNodes, Edge.CostStrategy strategy) {
+    double cost(Node destination, Set<Node> visitedNodes, Edge.CostStrategy strategy) {
         if (this == destination) return 0.0;
         if (visitedNodes.contains(this)) return UNREACHABLE;
         return edges.stream()
-                .mapToDouble(edge -> edge.findDestination(destination, copyWithThis(visitedNodes), strategy))
+                .mapToDouble(edge -> edge.cost(destination, copyWithThis(visitedNodes), strategy))
                 .min().orElse(UNREACHABLE);
     }
 

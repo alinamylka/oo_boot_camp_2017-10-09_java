@@ -19,8 +19,8 @@ public class Edge {
         this.cost = cost;
     }
 
-    double findDestination(Node destination, Set<Node> visitedNodes, CostStrategy costStrategy) {
-        return neighbor.findDestination(destination, visitedNodes, costStrategy) + costStrategy.cost(this);
+    double cost(Node destination, Set<Node> visitedNodes, CostStrategy costStrategy) {
+        return neighbor.cost(destination, visitedNodes, costStrategy) + costStrategy.cost(this);
     }
 
     @FunctionalInterface

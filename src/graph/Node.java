@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-import java.util.function.BiFunction;
+import java.util.function.Function;
 
 //Understands neighbours
 public class Node {
@@ -33,7 +33,7 @@ public class Node {
         return this.visit(destination, new HashSet<>(), Edge::cost);
     }
 
-    Optional<Double> visit(Node destination, Set<Node> visitedNodes, BiFunction<Edge, Double, Double> strategy) {
+    Optional<Double> visit(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
         if (this == destination) return Optional.of(0.0);
         if (visitedNodes.contains(this)) return Optional.empty();
         visitedNodes.add(this);

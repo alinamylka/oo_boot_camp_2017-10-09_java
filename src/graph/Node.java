@@ -35,14 +35,13 @@ public class Node {
     private Optional<Integer> hopCount(Node destination, Set<Node> visitedNodes) {
         if (this == destination) return Optional.of(0);
         if (visitedNodes.contains(this)) return Optional.empty();
+
         visitedNodes.add(this);
 
         return neightbors.stream()
-                .map(n ->
-                        n.hopCount(destination, visitedNodes)
-                                .map(node -> node + 1))
-                .filter(Optional::isPresent)
-                .map(Optional::get)
+                .map(n -> n.hopCount(destination, visitedNodes)
+                        .map(node -> node + 1))
+                .flatMap(Optional::stream)
                 .findAny();
     }
 }

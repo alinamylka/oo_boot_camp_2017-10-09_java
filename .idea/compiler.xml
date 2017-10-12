@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="oo_boot_camp_2017-10-09_java" target="1.8" />
+      <module name="oo_boot_camp_2017-10-09_java" target="9" />
     </bytecodeTargetLevel>
   </component>
 </project>

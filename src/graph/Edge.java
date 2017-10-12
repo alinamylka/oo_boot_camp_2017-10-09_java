@@ -16,12 +16,12 @@ public class Edge {
         this.cost = cost;
     }
 
-    double findDestination(Node destination, Set<Node> visitedNodes, CostFunction strategy) {
-        return neighbor.findDestination(destination, visitedNodes, strategy) + strategy.computeCost(this);
+    double findDestination(Node destination, Set<Node> visitedNodes, CostFunction costStrategy) {
+        return neighbor.findDestination(destination, visitedNodes, costStrategy) + costStrategy.cost(this);
     }
 
     @FunctionalInterface
     interface CostFunction {
-        double computeCost(Edge edge);
+        double cost(Edge edge);
     }
 }

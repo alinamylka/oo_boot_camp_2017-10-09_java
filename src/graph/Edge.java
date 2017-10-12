@@ -7,7 +7,6 @@ import java.util.function.BiFunction;
 // Understand the connection between the neighbours
 public class Edge {
 
-    private static final int ONE_HOP = 1;
     private final Node neighbor;
     private final int cost;
 
@@ -16,16 +15,16 @@ public class Edge {
         this.cost = cost;
     }
 
-    Optional<Integer> visit(Node destination, Set<Node> visitedNodes, BiFunction<Edge, Integer, Integer> strategy) {
+    Optional<Double> visit(Node destination, Set<Node> visitedNodes, BiFunction<Edge, Double, Double> strategy) {
         return neighbor.visit(destination, visitedNodes, strategy)
                 .map(r -> strategy.apply(this, r));
     }
 
-    Integer hop(Integer hops) {
-        return hops + ONE_HOP;
+    Double hop(Double hops) {
+        return hops + 1;
     }
 
-    Integer cost(Integer cost) {
+    Double cost(Double cost) {
         return cost + this.cost;
     }
 }

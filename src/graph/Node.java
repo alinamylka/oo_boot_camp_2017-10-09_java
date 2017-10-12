@@ -14,8 +14,6 @@ import java.util.function.BiFunction;
 
 //Understands neighbours
 public class Node {
-
-    private static final int NO_HOP = 0;
     private final List<Edge> neighbors = new ArrayList<>();
 
     public Node to(Node neighbor, int cost) {
@@ -28,20 +26,20 @@ public class Node {
     }
 
     public Optional<Integer> hopCount(Node destination) {
-        return this.visit(destination, new HashSet<>(), Edge::hop);
+        return this.visit(destination, new HashSet<>(), Edge::hop).map(d -> (int) d.doubleValue());
     }
 
-    public Optional<Integer> cost(Node destination) {
+    public Optional<Double> cost(Node destination) {
         return this.visit(destination, new HashSet<>(), Edge::cost);
     }
 
-    Optional<Integer> visit(Node destination, Set<Node> visitedNodes, BiFunction<Edge, Integer, Integer> strategy) {
-        if (this == destination) return Optional.of(NO_HOP);
+    Optional<Double> visit(Node destination, Set<Node> visitedNodes, BiFunction<Edge, Double, Double> strategy) {
+        if (this == destination) return Optional.of(0.0);
         if (visitedNodes.contains(this)) return Optional.empty();
         visitedNodes.add(this);
         return neighbors.stream()
                 .flatMap(n -> n.visit(destination, new HashSet<>(visitedNodes), strategy).stream())
-                .min(Integer::compare);
+                .min(Double::compare);
     }
 
 

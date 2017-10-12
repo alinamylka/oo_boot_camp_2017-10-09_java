@@ -1,6 +1,5 @@
 package graph;
 
-import java.util.Optional;
 import java.util.Set;
 import java.util.function.Function;
 
@@ -18,8 +17,7 @@ public class Edge {
         this.cost = cost;
     }
 
-    Optional<Double> visit(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
-        return neighbor.visit(destination, visitedNodes, strategy)
-                .map(r -> r + strategy.apply(this));
+    double visit(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
+        return neighbor.visit(destination, visitedNodes, strategy) + strategy.apply(this);
     }
 }

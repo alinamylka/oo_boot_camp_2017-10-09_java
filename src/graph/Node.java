@@ -18,6 +18,7 @@ import static graph.Edge.HOP_STRATEGY;
 //Understands neighbours
 public class Node {
     private final List<Edge> edges = new ArrayList<>();
+    private double UNREACHABLE = Double.POSITIVE_INFINITY;
 
     public Node to(Node neighbor, int cost) {
         edges.add(new Edge(neighbor, cost));
@@ -29,19 +30,21 @@ public class Node {
     }
 
     public Optional<Integer> hopCount(Node destination) {
-        return this.visit(destination, Set.of(), HOP_STRATEGY).map(d -> (int) d.doubleValue());
+        double result = this.visit(destination, Set.of(), HOP_STRATEGY);
+        return result == UNREACHABLE ? Optional.empty() : Optional.of((int) result);
     }
 
     public Optional<Double> cost(Node destination) {
-        return this.visit(destination, Set.of(), COST_STRATEGY);
+        double result = this.visit(destination, Set.of(), COST_STRATEGY);
+        return result == UNREACHABLE ? Optional.empty() : Optional.of(result);
     }
 
-    Optional<Double> visit(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
-        if (this == destination) return Optional.of(0.0);
-        if (visitedNodes.contains(this)) return Optional.empty();
+    double visit(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
+        if (this == destination) return 0.0;
+        if (visitedNodes.contains(this)) return UNREACHABLE;
         return edges.stream()
-                .flatMap(edge -> edge.visit(destination, copyWithThis(visitedNodes), strategy).stream())
-                .min(Double::compare);
+                .mapToDouble(edge -> edge.visit(destination, copyWithThis(visitedNodes), strategy))
+                .min().orElse(UNREACHABLE);
     }
 
     private Set<Node> copyWithThis(Set<Node> visitedNodes) {

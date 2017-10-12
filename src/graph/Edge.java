@@ -18,6 +18,6 @@ public class Edge {
     }
 
     double visit(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
-        return neighbor.visit(destination, visitedNodes, strategy) + strategy.apply(this);
+        return neighbor.findDestination(destination, visitedNodes, strategy) + strategy.apply(this);
     }
 }

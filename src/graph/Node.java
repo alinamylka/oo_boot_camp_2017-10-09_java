@@ -30,16 +30,16 @@ public class Node {
     }
 
     public Optional<Integer> hopCount(Node destination) {
-        double result = this.visit(destination, Set.of(), HOP_STRATEGY);
+        double result = findDestination(destination, Set.of(), HOP_STRATEGY);
         return result == UNREACHABLE ? Optional.empty() : Optional.of((int) result);
     }
 
     public Optional<Double> cost(Node destination) {
-        double result = this.visit(destination, Set.of(), COST_STRATEGY);
+        double result = findDestination(destination, Set.of(), COST_STRATEGY);
         return result == UNREACHABLE ? Optional.empty() : Optional.of(result);
     }
 
-    double visit(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
+    double findDestination(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
         if (this == destination) return 0.0;
         if (visitedNodes.contains(this)) return UNREACHABLE;
         return edges.stream()

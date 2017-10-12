@@ -35,8 +35,7 @@ public class Node {
         if (visitedNodes.contains(this)) return Optional.empty();
         visitedNodes.add(this);
         return neightbors.stream()
-                .map(n -> n.hopCount(destination, visitedNodes))
-                .flatMap(Optional::stream)
+                .flatMap(n -> n.hopCount(destination, visitedNodes).stream())
                 .map(n -> n + ONE_HOP)
                 .findAny();
     }

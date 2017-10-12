@@ -12,6 +12,9 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.function.Function;
 
+import static graph.Edge.COST_STRATEGY;
+import static graph.Edge.HOP_STRATEGY;
+
 //Understands neighbours
 public class Node {
     private final List<Edge> edges = new ArrayList<>();
@@ -26,20 +29,25 @@ public class Node {
     }
 
     public Optional<Integer> hopCount(Node destination) {
-        return this.visit(destination, new HashSet<>(), Edge::hop).map(d -> (int) d.doubleValue());
+        return this.visit(destination, new HashSet<>(), HOP_STRATEGY).map(d -> (int) d.doubleValue());
     }
 
     public Optional<Double> cost(Node destination) {
-        return this.visit(destination, new HashSet<>(), Edge::cost);
+        return this.visit(destination, new HashSet<>(), COST_STRATEGY);
     }
 
     Optional<Double> visit(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
         if (this == destination) return Optional.of(0.0);
         if (visitedNodes.contains(this)) return Optional.empty();
-        visitedNodes.add(this);
         return edges.stream()
-                .flatMap(edge -> edge.visit(destination, new HashSet<>(visitedNodes), strategy).stream())
+                .flatMap(edge -> edge.visit(destination, copyWithThis(visitedNodes), strategy).stream())
                 .min(Double::compare);
+    }
+
+    private HashSet<Node> copyWithThis(Set<Node> visitedNodes) {
+        HashSet<Node> copy = new HashSet<>(visitedNodes);
+        copy.add(this);
+        return copy;
     }
 
 

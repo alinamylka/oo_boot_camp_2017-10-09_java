@@ -47,7 +47,7 @@ public class Node {
         if (visitedNodes.contains(this)) return Optional.empty();
         visitedNodes.add(this);
         return neighbors.stream()
-                .flatMap(n -> n.cost(destination, visitedNodes).stream())
+                .flatMap(edge -> edge.cost(destination, visitedNodes, cost -> cost + edge.cost).stream())
                 .min(Integer::compare);
     }
 

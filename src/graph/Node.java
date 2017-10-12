@@ -13,12 +13,11 @@ import java.util.Set;
 
 public class Node {
 
-    public static final int ONE_HOP = 1;
-    public static final int NO_HOP = 0;
+    private static final int NO_HOP = 0;
     private final List<Edge> neighbors = new ArrayList<>();
 
     public Node to(Node neighbor, int cost) {
-        neighbors.add(new Edge(neighbor,cost));
+        neighbors.add(new Edge(neighbor, cost));
         return neighbor;
     }
 
@@ -35,12 +34,22 @@ public class Node {
         if (visitedNodes.contains(this)) return Optional.empty();
         visitedNodes.add(this);
         return neighbors.stream()
-                .flatMap(n -> n.hopCount(destination, new HashSet<>(visitedNodes)).stream())
-                .map(n -> n + ONE_HOP)
-                .findAny();
+                .flatMap(n -> n.hopCount(destination, visitedNodes).stream())
+                .min(Integer::compare);
     }
 
     public Optional<Integer> cost(Node destination) {
-        return null;
+        return this.cost(destination, new HashSet<>());
     }
+
+    Optional<Integer> cost(Node destination, Set<Node> visitedNodes) {
+        if (this == destination) return Optional.of(NO_HOP);
+        if (visitedNodes.contains(this)) return Optional.empty();
+        visitedNodes.add(this);
+        return neighbors.stream()
+                .flatMap(n -> n.cost(destination, visitedNodes).stream())
+                .min(Integer::compare);
+    }
+
+
 }

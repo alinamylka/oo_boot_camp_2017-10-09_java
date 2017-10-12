@@ -29,11 +29,11 @@ public class Node {
     }
 
     public Optional<Integer> hopCount(Node destination) {
-        return this.visit(destination, new HashSet<>(), HOP_STRATEGY).map(d -> (int) d.doubleValue());
+        return this.visit(destination, Set.of(), HOP_STRATEGY).map(d -> (int) d.doubleValue());
     }
 
     public Optional<Double> cost(Node destination) {
-        return this.visit(destination, new HashSet<>(), COST_STRATEGY);
+        return this.visit(destination, Set.of(), COST_STRATEGY);
     }
 
     Optional<Double> visit(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {

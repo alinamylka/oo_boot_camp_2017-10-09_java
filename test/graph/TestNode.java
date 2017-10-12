@@ -2,7 +2,7 @@ package graph;
 
 import org.junit.Test;
 
-import java.util.Arrays;
+import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
@@ -49,7 +49,7 @@ public class TestNode {
         assertFalse(B.hopCount(G).isPresent());
         assertFalse(G.hopCount(B).isPresent());
 
-        assertTrue(Arrays.asList(3, 4).contains(C.hopCount(F).get().intValue()));
+        assertTrue(Set.of(3, 4).contains(C.hopCount(F).get().intValue()));
 
         assertFalse(A.hopCount(B).isPresent());
         assertFalse(B.hopCount(G).isPresent());

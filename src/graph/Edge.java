@@ -1,13 +1,12 @@
 package graph;
 
 import java.util.Set;
-import java.util.function.Function;
 
 // Understand the connection between the neighbours
 public class Edge {
 
-    static final Function<Edge, Double> HOP_STRATEGY = edge -> 1.0;
-    static final Function<Edge, Double> COST_STRATEGY = edge -> edge.cost;
+    static final CostFunction HOP_STRATEGY = edge -> 1.0;
+    static final CostFunction COST_STRATEGY = edge -> edge.cost;
 
     private final Node neighbor;
     private final double cost;
@@ -17,7 +16,12 @@ public class Edge {
         this.cost = cost;
     }
 
-    double findDestination(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
-        return neighbor.findDestination(destination, visitedNodes, strategy) + strategy.apply(this);
+    double findDestination(Node destination, Set<Node> visitedNodes, CostFunction strategy) {
+        return neighbor.findDestination(destination, visitedNodes, strategy) + strategy.computeCost(this);
+    }
+
+    @FunctionalInterface
+    interface CostFunction {
+        double computeCost(Edge edge);
     }
 }

@@ -10,7 +10,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-import java.util.function.Function;
 
 import static graph.Edge.COST_STRATEGY;
 import static graph.Edge.HOP_STRATEGY;
@@ -39,7 +38,7 @@ public class Node {
         return result == UNREACHABLE ? Optional.empty() : Optional.of(result);
     }
 
-    double findDestination(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
+    double findDestination(Node destination, Set<Node> visitedNodes, Edge.CostFunction strategy) {
         if (this == destination) return 0.0;
         if (visitedNodes.contains(this)) return UNREACHABLE;
         return edges.stream()

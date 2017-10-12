@@ -38,27 +38,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Node.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Node.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/graph/Node.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="566">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="440">
+              <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
               <folding>
-                <element signature="e#0#1672#0" expanded="true" />
+                <element signature="e#0#1378#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#365#382#0" expanded="true" />
-                <element signature="e#439#478#0" expanded="true" />
-                <element signature="e#439#478#0" expanded="true" />
-                <element signature="e#558#559#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#739#740#0" expanded="true" />
-                <element signature="e#952#974#0" expanded="true" />
-                <element signature="e#952#974#0" expanded="true" />
-                <element signature="e#1187#1188#0" expanded="true" />
-                <element signature="e#1249#1250#0" expanded="true" />
-                <element signature="e#1458#1480#0" expanded="true" />
-                <element signature="e#1458#1480#0" expanded="true" />
+                <element signature="e#403#420#0" expanded="true" />
+                <element signature="e#477#516#0" expanded="true" />
+                <element signature="e#477#516#0" expanded="true" />
+                <element signature="e#596#597#0" expanded="true" />
+                <element signature="e#652#653#0" expanded="true" />
+                <element signature="e#711#712#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#915#916#0" expanded="true" />
+                <element signature="e#1170#1192#0" expanded="true" />
+                <element signature="e#1170#1192#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,17 +72,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Edge.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Edge.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/graph/Edge.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+            <state relative-caret-position="567">
+              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#939#940#0" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
+                <element signature="e#805#806#0" expanded="true" />
+                <element signature="e#842#843#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
+                <element signature="e#940#941#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,8 +91,8 @@
       <file leaf-file-name="Stream.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/stream/Stream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="275" column="18" lean-forward="true" selection-start-line="275" selection-start-column="18" selection-end-line="275" selection-end-column="18" />
+            <state relative-caret-position="254">
+              <caret line="282" column="18" lean-forward="false" selection-start-line="282" selection-start-column="18" selection-end-line="282" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -152,6 +150,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="ef5188026898f5e5df7572317fa70134cdc72f33" />
+      </map>
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -187,8 +190,8 @@
         <option value="$PROJECT_DIR$/src/graph/Path.java" />
         <option value="$PROJECT_DIR$/src/graph/Connection.java" />
         <option value="$PROJECT_DIR$/test/graph/TestNode.java" />
-        <option value="$PROJECT_DIR$/src/graph/Edge.java" />
         <option value="$PROJECT_DIR$/src/graph/Node.java" />
+        <option value="$PROJECT_DIR$/src/graph/Edge.java" />
       </list>
     </option>
   </component>
@@ -955,19 +958,19 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNode - 2017.10.12 at 12h 09m 42s.xml">
-      <configuration name="TestNode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestNode - 2017.10.12 at 12h 16m 07s.xml">
-      <configuration name="TestNode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestNode - 2017.10.12 at 13h 23m 55s.xml">
-      <configuration name="TestNode" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestNode - 2017.10.12 at 13h 28m 43s.xml">
-      <configuration name="TestNode" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestNode - 2017.10.12 at 13h 29m 34s.xml">
+      <configuration name="TestNode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNode - 2017.10.12 at 13h 44m 19s.xml">
+      <configuration name="TestNode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNode - 2017.10.12 at 14h 09m 21s.xml">
+      <configuration name="TestNode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNode - 2017.10.12 at 14h 15m 04s.xml">
+      <configuration name="TestNode" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNode - 2017.10.12 at 14h 15m 48s.xml">
       <configuration name="TestNode" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestNode_cost - 2017.10.12 at 12h 06m 35s.xml">
@@ -987,7 +990,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34862000" />
+    <option name="totallyTimeSpent" value="36906000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1170" extended-state="6" />
@@ -1000,8 +1003,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14070891" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3702595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18163672" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28542915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2235529" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1024,6 +1027,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14070891" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18904404" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13641246" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1040,6 +1044,7 @@
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22222222" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2442211" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" x="1290" y="59" width="294" height="766" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.249501" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
@@ -1075,6 +1080,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1133,7 +1164,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="966">
           <caret line="51" column="100" lean-forward="false" selection-start-line="51" selection-start-column="100" selection-end-line="51" selection-end-column="100" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1343,7 +1373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1416,14 +1445,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/stream/Stream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="275" column="18" lean-forward="true" selection-start-line="275" selection-start-column="18" selection-end-line="275" selection-end-column="18" />
+        <state relative-caret-position="254">
+          <caret line="282" column="18" lean-forward="false" selection-start-line="282" selection-start-column="18" selection-end-line="282" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1446,40 +1474,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph/Edge.java">
+    <entry file="file://$PROJECT_DIR$/src/graph/Node.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="50" lean-forward="false" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        <state relative-caret-position="440">
+          <caret line="41" column="34" lean-forward="false" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
           <folding>
+            <element signature="e#0#1378#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#939#940#0" expanded="true" />
-            <element signature="e#986#987#0" expanded="true" />
+            <element signature="e#403#420#0" expanded="true" />
+            <element signature="e#477#516#0" expanded="true" />
+            <element signature="e#477#516#0" expanded="true" />
+            <element signature="e#596#597#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#711#712#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#1170#1192#0" expanded="true" />
+            <element signature="e#1170#1192#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/graph/Node.java">
+    <entry file="file://$PROJECT_DIR$/src/graph/Edge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="566">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="567">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
-            <element signature="e#0#1672#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#365#382#0" expanded="true" />
-            <element signature="e#439#478#0" expanded="true" />
-            <element signature="e#439#478#0" expanded="true" />
-            <element signature="e#558#559#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-            <element signature="e#739#740#0" expanded="true" />
-            <element signature="e#952#974#0" expanded="true" />
-            <element signature="e#952#974#0" expanded="true" />
-            <element signature="e#1187#1188#0" expanded="true" />
-            <element signature="e#1249#1250#0" expanded="true" />
-            <element signature="e#1458#1480#0" expanded="true" />
-            <element signature="e#1458#1480#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#842#843#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+            <element signature="e#940#941#0" expanded="true" />
           </folding>
         </state>
       </provider>

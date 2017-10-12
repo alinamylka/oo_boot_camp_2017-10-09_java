@@ -43,7 +43,7 @@ public class Node {
         if (this == destination) return 0.0;
         if (visitedNodes.contains(this)) return UNREACHABLE;
         return edges.stream()
-                .mapToDouble(edge -> edge.visit(destination, copyWithThis(visitedNodes), strategy))
+                .mapToDouble(edge -> edge.findDestination(destination, copyWithThis(visitedNodes), strategy))
                 .min().orElse(UNREACHABLE);
     }
 

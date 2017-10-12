@@ -17,7 +17,7 @@ public class Edge {
         this.cost = cost;
     }
 
-    double visit(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
+    double findDestination(Node destination, Set<Node> visitedNodes, Function<Edge, Double> strategy) {
         return neighbor.findDestination(destination, visitedNodes, strategy) + strategy.apply(this);
     }
 }

@@ -20,10 +20,10 @@ public class TestNode {
         F = new Node();
         G = new Node();
 
-        B.to(A);
-        B.to(C).to(D).to(E).to(B).to(F);
-        C.to(D);
-        C.to(E);
+        B.to(A, 5);
+        B.to(C, 6).to(D, 1).to(E, 2).to(B, 3).to(F, 4);
+        C.to(D, 7);
+        C.to(E, 8);
     }
 
     @Test
@@ -56,5 +56,21 @@ public class TestNode {
         assertFalse(G.hopCount(B).isPresent());
     }
 
+    /*@Test
+    public void cost() {
+        assertEquals(0, B.cost(B).get().intValue());
+        assertEquals(5, B.cost(A).get().intValue());
+        assertEquals(4, B.cost(F).get().intValue());
+        assertEquals(7, B.cost(D).get().intValue());
 
+        assertFalse(A.cost(B).isPresent());
+        assertFalse(B.cost(G).isPresent());
+        assertFalse(G.cost(B).isPresent());
+
+        assertEquals(10, C.cost(F).get().intValue());
+
+        assertFalse(A.cost(B).isPresent());
+        assertFalse(B.cost(G).isPresent());
+        assertFalse(G.cost(B).isPresent());
+    }*/
 }

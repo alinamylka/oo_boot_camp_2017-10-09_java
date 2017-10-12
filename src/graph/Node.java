@@ -15,10 +15,10 @@ public class Node {
 
     public static final int ONE_HOP = 1;
     public static final int NO_HOP = 0;
-    private final List<Node> neighbors = new ArrayList<>();
+    private final List<Edge> neighbors = new ArrayList<>();
 
-    public Node to(Node neighbor) {
-        neighbors.add(neighbor);
+    public Node to(Node neighbor, int cost) {
+        neighbors.add(new Edge(neighbor,cost));
         return neighbor;
     }
 
@@ -30,7 +30,7 @@ public class Node {
         return this.hopCount(destination, new HashSet<>());
     }
 
-    private Optional<Integer> hopCount(Node destination, Set<Node> visitedNodes) {
+    Optional<Integer> hopCount(Node destination, Set<Node> visitedNodes) {
         if (this == destination) return Optional.of(NO_HOP);
         if (visitedNodes.contains(this)) return Optional.empty();
         visitedNodes.add(this);
@@ -40,4 +40,7 @@ public class Node {
                 .findAny();
     }
 
+    public Optional<Integer> cost(Node destination) {
+        return null;
+    }
 }

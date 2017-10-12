@@ -21,11 +21,11 @@ public class Edge {
                 .map(r -> strategy.apply(this, r));
     }
 
-    public static Integer hop(Edge edge, Integer hops) {
+    public Integer hop(Integer hops) {
         return hops + ONE_HOP;
     }
 
-    public static Integer cost(Edge edge, Integer cost) {
-        return cost + edge.cost;
+    public Integer cost(Integer cost) {
+        return cost + this.cost;
     }
 }

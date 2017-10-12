@@ -35,7 +35,7 @@ public class Node {
         if (visitedNodes.contains(this)) return Optional.empty();
         visitedNodes.add(this);
         return neighbors.stream()
-                .flatMap(n -> n.hopCount(destination, visitedNodes).stream())
+                .flatMap(n -> n.hopCount(destination, new HashSet<>(visitedNodes)).stream())
                 .map(n -> n + ONE_HOP)
                 .findAny();
     }

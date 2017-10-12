@@ -44,8 +44,8 @@ public class Node {
                 .min(Double::compare);
     }
 
-    private HashSet<Node> copyWithThis(Set<Node> visitedNodes) {
-        HashSet<Node> copy = new HashSet<>(visitedNodes);
+    private Set<Node> copyWithThis(Set<Node> visitedNodes) {
+        Set<Node> copy = new HashSet<>(visitedNodes);
         copy.add(this);
         return copy;
     }

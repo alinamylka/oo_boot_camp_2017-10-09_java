@@ -2,7 +2,11 @@ package graph;
 
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import java.util.Arrays;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestNode {
     private final static Node A, B, C, D, E, F, G;
@@ -33,4 +37,27 @@ public class TestNode {
         assertFalse(A.canReach(B));
         assertFalse(B.canReach(G));
     }
+
+    @Test
+    public void hopCount() {
+        assertEquals(0, B.hopCount(B).get().intValue());
+        assertEquals(1, B.hopCount(A).get().intValue());
+        assertEquals(1, B.hopCount(F).get().intValue());
+        assertEquals(2, B.hopCount(D).get().intValue());
+
+
+        assertFalse(A.hopCount(B).isPresent());
+        assertFalse(B.hopCount(G).isPresent());
+        assertFalse(G.hopCount(B).isPresent());
+
+
+        Object result = C.hopCount(F).get();
+        assertTrue(Arrays.asList(3, 4).contains(result));
+
+        assertFalse(A.hopCount(B).isPresent());
+        assertFalse(B.hopCount(G).isPresent());
+        assertFalse(G.hopCount(B).isPresent());
+    }
+
+
 }

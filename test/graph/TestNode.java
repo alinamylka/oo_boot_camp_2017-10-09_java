@@ -2,12 +2,12 @@ package graph;
 
 import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestNode {
     private final static Node A, B, C, D, E, F, G;
+    private static final double DELTA = 0.00001d;
 
     static {
         A = new Node();
@@ -18,11 +18,10 @@ public class TestNode {
         F = new Node();
         G = new Node();
 
-        C.to(E, 8);
-        B.to(A, 5);
-        B.to(C, 6).to(D, 7).to(E, 2).to(B, 3).to(F, 4);
-        C.to(D, 1);
-
+        B.to(A, 10);
+        B.to(C, 1).to(D, 2).to(E, 1).to(B, 2).to(F, 3);
+        C.to(D, 5);
+        C.to(E, 2);
     }
 
     @Test
@@ -36,41 +35,25 @@ public class TestNode {
         assertFalse(A.canReach(B));
         assertFalse(B.canReach(G));
     }
+    @Test
+    public void paths() {
+        assertEquals(1, B.paths(F).size());
+        assertEquals(2, B.paths(D).size());
+        assertEquals(3, B.paths(E).size());
+        assertEquals(0, B.paths(G).size());
+    }
 
     @Test
     public void hopCount() {
-        assertEquals(0, B.hopCount(B).get().intValue());
-        assertEquals(1, B.hopCount(A).get().intValue());
-        assertEquals(1, B.hopCount(F).get().intValue());
-        assertEquals(2, B.hopCount(D).get().intValue());
-
-        assertFalse(A.hopCount(B).isPresent());
-        assertFalse(B.hopCount(G).isPresent());
-        assertFalse(G.hopCount(B).isPresent());
-
-        assertEquals(3, C.hopCount(F).get().intValue());
-
-        assertFalse(A.hopCount(B).isPresent());
-        assertFalse(B.hopCount(G).isPresent());
-        assertFalse(G.hopCount(B).isPresent());
+        assertEquals(0, B.hopCount(G));
+        assertEquals(1, B.hopCount(A));
+        assertEquals(3, C.hopCount(F));
     }
 
     @Test
     public void cost() {
-        assertEquals(0, B.cost(B).get().intValue());
-        assertEquals(3, C.cost(E).get().intValue());
-        assertEquals(5, B.cost(A).get().intValue());
-        assertEquals(4, B.cost(F).get().intValue());
-        assertEquals(7, B.cost(D).get().intValue());
-
-        assertFalse(A.cost(B).isPresent());
-        assertFalse(B.cost(G).isPresent());
-        assertFalse(G.cost(B).isPresent());
-
-        assertEquals(10, C.cost(F).get().intValue());
-
-        assertFalse(A.cost(B).isPresent());
-        assertFalse(B.cost(G).isPresent());
-        assertFalse(G.cost(B).isPresent());
+        assertEquals(0d, B.cost(G), DELTA);
+        assertEquals(10d, B.cost(A), DELTA);
+        assertEquals(7d, C.cost(F), DELTA);
     }
 }

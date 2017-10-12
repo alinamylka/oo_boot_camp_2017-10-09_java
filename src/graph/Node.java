@@ -1,56 +1,67 @@
-/*
- * Copyright (c) 2017 by Fred George
- * May be used freely except for training; license required for training.
- */
-
 package graph;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
-import static graph.Edge.COST_STRATEGY;
-import static graph.Edge.HOP_STRATEGY;
-
-//Understands neighbours
 public class Node {
-    private final List<Edge> edges = new ArrayList<>();
-    private double UNREACHABLE = Double.POSITIVE_INFINITY;
 
-    public Node to(Node neighbor, int cost) {
-        edges.add(new Edge(neighbor, cost));
+    private final List<Link> neighbours = new ArrayList<>();
+
+    public Node to(Node neighbor, double cost) {
+        neighbours.add(new Link(neighbor, cost));
         return neighbor;
     }
 
     public boolean canReach(Node destination) {
-        return hopCount(destination).isPresent();
+        return this.paths(destination, noVisitedNodes()).size() > 0;
     }
 
-    public Optional<Integer> hopCount(Node destination) {
-        double result = cost(destination, Set.of(), HOP_STRATEGY);
-        return result == UNREACHABLE ? Optional.empty() : Optional.of((int) result);
+    public List<Path> paths(Node destination) {
+        return this.paths(destination, noVisitedNodes());
     }
 
-    public Optional<Double> cost(Node destination) {
-        double result = cost(destination, Set.of(), COST_STRATEGY);
-        return result == UNREACHABLE ? Optional.empty() : Optional.of(result);
+    public List<Path> paths(Node destination, Set<Node> visitedNodes) {
+        if (destination == this) {
+            return Arrays.asList(new Path());
+        }
+
+        if (visitedNodes.contains(this)) {
+            return Collections.emptyList();
+        }
+
+        return neighbours
+                .stream()
+                .flatMap(neighbour -> neighbour.paths(destination, copyAndThis(visitedNodes)).stream())
+                .collect(Collectors.toList());
     }
 
-    double cost(Node destination, Set<Node> visitedNodes, Edge.CostStrategy strategy) {
-        if (this == destination) return 0.0;
-        if (visitedNodes.contains(this)) return UNREACHABLE;
-        return edges.stream()
-                .mapToDouble(edge -> edge.cost(destination, copyWithThis(visitedNodes), strategy))
-                .min().orElse(UNREACHABLE);
+    public int hopCount(Node destination) {
+        Optional<Path> path = findPath(destination, Comparator.comparingInt(Path::hopCount));
+        return path.isPresent() ? path.get().hopCount() : 0;
     }
 
-    private Set<Node> copyWithThis(Set<Node> visitedNodes) {
-        Set<Node> copy = new HashSet<>(visitedNodes);
-        copy.add(this);
-        return copy;
+    private Optional<Path> findPath(Node destination, Comparator<Path> comparator) {
+        return this.paths(destination).stream().min(comparator);
     }
 
+    public double cost(Node destination) {
+        Optional<Path> path = findPath(destination, Comparator.comparingDouble(Path::cost));
+        return path.isPresent() ? path.get().cost() : 0;
+    }
 
+    private Set<Node> copyAndThis(Set<Node> visitedNodes) {
+        visitedNodes.add(this);
+        return new HashSet<>(visitedNodes);
+    }
+
+    private Set<Node> noVisitedNodes() {
+        return new HashSet<>();
+    }
 }

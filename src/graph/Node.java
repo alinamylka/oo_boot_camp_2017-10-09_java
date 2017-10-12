@@ -26,10 +26,6 @@ public class Node {
         return hopCount(destination).isPresent();
     }
 
-    private Set<Node> noVisitedNodes() {
-        return new HashSet<>();
-    }
-
     public Optional<Integer> hopCount(Node destination) {
         return this.hopCount(destination, noVisitedNodes());
     }
@@ -37,13 +33,15 @@ public class Node {
     private Optional<Integer> hopCount(Node destination, Set<Node> visitedNodes) {
         if (this == destination) return Optional.of(NO_HOPE);
         if (visitedNodes.contains(this)) return Optional.empty();
-
         visitedNodes.add(this);
-
         return neightbors.stream()
                 .map(n -> n.hopCount(destination, visitedNodes)
                         .map(node -> node + ONE_HOPE))
                 .flatMap(Optional::stream)
                 .findAny();
+    }
+
+    private Set<Node> noVisitedNodes() {
+        return new HashSet<>();
     }
 }

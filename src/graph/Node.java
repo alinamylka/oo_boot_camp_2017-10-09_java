@@ -38,7 +38,7 @@ public class Node {
         return result == UNREACHABLE ? Optional.empty() : Optional.of(result);
     }
 
-    double findDestination(Node destination, Set<Node> visitedNodes, Edge.CostFunction strategy) {
+    double findDestination(Node destination, Set<Node> visitedNodes, Edge.CostStrategy strategy) {
         if (this == destination) return 0.0;
         if (visitedNodes.contains(this)) return UNREACHABLE;
         return edges.stream()

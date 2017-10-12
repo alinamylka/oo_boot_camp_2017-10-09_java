@@ -5,8 +5,8 @@ import java.util.Set;
 // Understand the connection between the neighbours
 public class Edge {
 
-    static final CostFunction HOP_STRATEGY = edge -> 1.0;
-    static final CostFunction COST_STRATEGY = edge -> edge.cost;
+    static final CostStrategy HOP_STRATEGY = edge -> 1.0;
+    static final CostStrategy COST_STRATEGY = edge -> edge.cost;
 
     private final Node neighbor;
     private final double cost;
@@ -16,12 +16,12 @@ public class Edge {
         this.cost = cost;
     }
 
-    double findDestination(Node destination, Set<Node> visitedNodes, CostFunction costStrategy) {
+    double findDestination(Node destination, Set<Node> visitedNodes, CostStrategy costStrategy) {
         return neighbor.findDestination(destination, visitedNodes, costStrategy) + costStrategy.cost(this);
     }
 
     @FunctionalInterface
-    interface CostFunction {
+    interface CostStrategy {
         double cost(Edge edge);
     }
 }

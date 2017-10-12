@@ -12,6 +12,9 @@ public class Edge {
     private final double cost;
 
     public Edge(Node neighbor, double cost) {
+        if (cost < 0) {
+            throw new IllegalArgumentException("cost can not be negative");
+        }
         this.neighbor = neighbor;
         this.cost = cost;
     }

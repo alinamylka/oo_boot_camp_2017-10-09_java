@@ -1,13 +1,21 @@
+/*
+ * Copyright (c) 2017 by Fred George
+ * May be used freely except for training; license required for training.
+ */
+
 package graph;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Node {
-    private final List<Node> neighbours = new ArrayList<>();
+
+    private final List<Node> neightbors = new ArrayList<>();
 
     public Node to(Node neighbor) {
-        neighbours.add(neighbor);
+        neightbors.add(neighbor);
         return neighbor;
     }
 
@@ -15,16 +23,18 @@ public class Node {
         return this.canReach(destination, noVisitedNodes());
     }
 
-    private boolean canReach(Node destination, List<Node> visitedNodes) {
+    private boolean canReach(Node destination, Set<Node> visitedNodes) {
         if (this == destination) return true;
         if (visitedNodes.contains(this)) return false;
         visitedNodes.add(this);
-        for (Node node : neighbours)
-            if (node.canReach(destination, visitedNodes)) return true;
-        return false;
+
+        return neightbors.stream()
+                .filter(n -> n.canReach(destination, visitedNodes))
+                .findFirst()
+                .isPresent();
     }
 
-    private List<Node> noVisitedNodes() {
-        return new ArrayList<>();
+    private Set<Node> noVisitedNodes() {
+        return new HashSet<>();
     }
 }

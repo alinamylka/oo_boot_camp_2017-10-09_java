@@ -12,18 +12,13 @@ public class Edge {
     private final int cost;
 
     public Edge(Node neighbor, int cost) {
-
         this.neighbor = neighbor;
         this.cost = cost;
     }
 
     Optional<Integer> visit(Node destination, Set<Node> visitedNodes, BiFunction<Edge, Integer, Integer> strategy) {
-        Optional<Integer> result = neighbor.visit(destination, visitedNodes, strategy);
-
-        if (result.isPresent()) {
-            return Optional.of(strategy.apply(this, result.get()));
-        }
-        return Optional.empty();
+        return neighbor.visit(destination, visitedNodes, strategy)
+                .map(r -> strategy.apply(this, r));
     }
 
     public static Integer hop(Edge edge, Integer hops) {

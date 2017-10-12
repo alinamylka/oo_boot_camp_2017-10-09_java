@@ -1,8 +1,8 @@
 package graph;
 
-import java.util.HashSet;
 import java.util.Optional;
 import java.util.Set;
+import java.util.function.BiFunction;
 
 // Understand the connection between the neighbours
 public class Edge {
@@ -17,12 +17,20 @@ public class Edge {
         this.cost = cost;
     }
 
-    Optional<Integer> hopCount(Node destination, Set<Node> visitedNodes) {
-        return neighbor.hopCount(destination, new HashSet<>(visitedNodes)).map(n -> n + ONE_HOP);
+    Optional<Integer> visit(Node destination, Set<Node> visitedNodes, BiFunction<Edge, Integer, Integer> strategy) {
+        Optional<Integer> result = neighbor.visit(destination, visitedNodes, strategy);
+
+        if (result.isPresent()) {
+            return Optional.of(strategy.apply(this, result.get()));
+        }
+        return Optional.empty();
     }
 
-    Optional<Integer> cost(Node destination, Set<Node> visitedNodes) {
-        return neighbor.cost(destination, new HashSet<>(visitedNodes)).map(cost -> cost + this.cost);
+    public static Integer hop(Edge edge, Integer hops) {
+        return hops + ONE_HOP;
     }
 
+    public static Integer cost(Edge edge, Integer cost) {
+        return cost + edge.cost;
+    }
 }

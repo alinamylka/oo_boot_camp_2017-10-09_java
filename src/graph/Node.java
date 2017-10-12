@@ -27,7 +27,7 @@ public class Node {
     }
 
     public Optional<Integer> hopCount(Node destination) {
-        return this.hopCount(destination, noVisitedNodes());
+        return this.hopCount(destination, new HashSet<>());
     }
 
     private Optional<Integer> hopCount(Node destination, Set<Node> visitedNodes) {
@@ -40,7 +40,4 @@ public class Node {
                 .findAny();
     }
 
-    private Set<Node> noVisitedNodes() {
-        return new HashSet<>();
-    }
 }

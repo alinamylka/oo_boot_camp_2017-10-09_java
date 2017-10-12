@@ -15,10 +15,10 @@ public class Node {
 
     public static final int ONE_HOP = 1;
     public static final int NO_HOP = 0;
-    private final List<Node> neightbors = new ArrayList<>();
+    private final List<Node> neighbors = new ArrayList<>();
 
     public Node to(Node neighbor) {
-        neightbors.add(neighbor);
+        neighbors.add(neighbor);
         return neighbor;
     }
 
@@ -34,7 +34,7 @@ public class Node {
         if (this == destination) return Optional.of(NO_HOP);
         if (visitedNodes.contains(this)) return Optional.empty();
         visitedNodes.add(this);
-        return neightbors.stream()
+        return neighbors.stream()
                 .flatMap(n -> n.hopCount(destination, visitedNodes).stream())
                 .map(n -> n + ONE_HOP)
                 .findAny();

@@ -43,14 +43,14 @@ public class Node {
     public int hopCount(Node destination) {
         return path(destination)
                 .map(Path::hopCount)
-                .orElseThrow(IllegalArgumentException::new);
+                .orElseThrow(() -> new IllegalArgumentException("Destination is not reachable"));
     }
 
 
     public double cost(Node destination) {
         return path(destination)
                 .map(Path::cost)
-                .orElseThrow(IllegalArgumentException::new);
+                .orElseThrow(() -> new IllegalArgumentException("Destination is not reachable"));
     }
 
     private Set<Node> copyAndThis(Set<Node> visitedNodes) {

@@ -20,10 +20,10 @@ public class TestNode {
         F = new Node();
         G = new Node();
 
-        B.to(A, 10);
-        B.to(C, 1).to(D, 2).to(E, 1).to(B, 2).to(F, 3);
-        C.to(D, 5);
-        C.to(E, 2);
+        B.to(A, 5);
+        B.to(C, 6).to(D, 7).to(E, 2).to(B, 3).to(F, 4);
+        C.to(D, 1);
+        C.to(E, 8);
     }
 
     @Test
@@ -42,7 +42,7 @@ public class TestNode {
     public void path() {
         assertEquals(1, B.path(F).get().hopCount());
         assertEquals(2, B.path(D).get().hopCount());
-        assertEquals(2, B.path(E).get().hopCount());
+        assertEquals(3, B.path(E).get().hopCount());
         assertFalse(B.path(G).isPresent());
     }
 
@@ -56,7 +56,7 @@ public class TestNode {
     @Test
     public void cost() {
         assertThrows(IllegalArgumentException.class, () -> B.cost(G));
-        assertEquals(10d, B.cost(A), DELTA);
-        assertEquals(7d, C.cost(F), DELTA);
+        assertEquals(5d, B.cost(A), DELTA);
+        assertEquals(10d, C.cost(F), DELTA);
     }
 }

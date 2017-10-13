@@ -6,6 +6,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.function.ToDoubleFunction;
 
 // understands neighbours
 public class Node {
@@ -18,14 +19,19 @@ public class Node {
     }
 
     public boolean canReach(Node destination) {
-        return this.path(destination, noVisitedNodes()).isPresent();
+        return this.path(destination, noVisitedNodes(), Path::cost).isPresent();
     }
+
 
     public Optional<Path> path(Node destination) {
-        return this.path(destination, noVisitedNodes());
+        return this.path(destination, Path::cost);
     }
 
-    Optional<Path> path(Node destination, Set<Node> visitedNodes) {
+    Optional<Path> path(Node destination, ToDoubleFunction<Path> strategy) {
+        return this.path(destination, noVisitedNodes(), strategy);
+    }
+
+    Optional<Path> path(Node destination, Set<Node> visitedNodes, ToDoubleFunction<Path> strategy) {
         if (destination == this) {
             return Optional.of(new Path());
         }
@@ -37,18 +43,18 @@ public class Node {
         return neighbours
                 .stream()
                 .flatMap(neighbour -> neighbour.path(destination, copyAndThis(visitedNodes)).stream())
-                .min(Comparator.comparingDouble(Path::cost));
+                .min(Comparator.comparingDouble(strategy));
     }
 
     public int hopCount(Node destination) {
-        return path(destination)
+        return path(destination, Path::hopCount)
                 .map(Path::hopCount)
                 .orElseThrow(() -> new IllegalArgumentException("Destination is not reachable"));
     }
 
 
     public double cost(Node destination) {
-        return path(destination)
+        return path(destination, Path::cost)
                 .map(Path::cost)
                 .orElseThrow(() -> new IllegalArgumentException("Destination is not reachable"));
     }

@@ -51,16 +51,16 @@ public class Node {
     }
 
     public int hopCount(Node destination) {
-        Optional<Path> path = findPath(destination, Comparator.comparingInt(Path::hopCount));
+        Optional<Path> path = path(destination, Comparator.comparingInt(Path::hopCount));
         return path.isPresent() ? path.get().hopCount() : 0;
     }
 
-    private Optional<Path> findPath(Node destination, Comparator<Path> comparator) {
+    private Optional<Path> path(Node destination, Comparator<Path> comparator) {
         return this.paths(destination).stream().min(comparator);
     }
 
     public double cost(Node destination) {
-        Optional<Path> path = findPath(destination, Comparator.comparingDouble(Path::cost));
+        Optional<Path> path = path(destination, Comparator.comparingDouble(Path::cost));
         return path.isPresent() ? path.get().cost() : 0;
     }
 

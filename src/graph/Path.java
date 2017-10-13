@@ -2,7 +2,7 @@ package graph;
 
 import java.util.LinkedList;
 
-// understands a way to go between the nodes
+// understands a way from one node to another node
 public class Path {
     private final LinkedList<Link> nodes;
 
@@ -19,6 +19,6 @@ public class Path {
     }
 
     public double cost() {
-        return nodes.stream().mapToDouble(Link::cost).sum();
+        return Link.totalCost(nodes);
     }
 }

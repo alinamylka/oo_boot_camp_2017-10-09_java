@@ -2,6 +2,7 @@ package graph;
 
 import java.util.LinkedList;
 
+// understands a way to go between the nodes
 public class Path {
     private final LinkedList<Link> nodes;
 

@@ -10,6 +10,7 @@ import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+// understands neighbours
 public class Node {
 
     private final List<Link> neighbours = new ArrayList<>();

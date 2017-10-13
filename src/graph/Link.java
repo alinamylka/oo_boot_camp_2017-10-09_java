@@ -1,6 +1,7 @@
 package graph;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
@@ -20,9 +21,10 @@ public class Link {
         return path;
     }
 
-    @Override
-    public String toString() {
-        return other.toString();
+    public List<Path> paths(Node destination, Set<Link> visitedLinks) {
+        List<Path> paths = other.paths(destination, visitedLinks);
+        paths.forEach(p -> p.prepend(this));
+        return paths;
     }
 
     public static double totalCost(LinkedList<Link> nodes) {
@@ -31,5 +33,13 @@ public class Link {
 
     private double cost() {
         return cost;
+    }
+
+    @Override
+    public String toString() {
+        return "Link{" +
+                "other=" + other +
+                ", cost=" + cost +
+                '}';
     }
 }

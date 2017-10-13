@@ -1,17 +1,24 @@
 package graph;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 import java.util.function.ToDoubleFunction;
+import java.util.stream.Collectors;
 
 // understands neighbours
 public class Node {
 
     private final List<Link> neighbours = new ArrayList<>();
+    private final String label;
+
+    public Node(String label) {
+        this.label = label;
+    }
 
     public Node to(Node neighbor, double cost) {
         neighbours.add(new Link(neighbor, cost));
@@ -66,5 +73,34 @@ public class Node {
 
     private Set<Node> noVisitedNodes() {
         return new HashSet<>();
+    }
+
+    public List<Path> paths(Node destination) {
+        return paths(destination, new HashSet<>());
+    }
+
+    List<Path> paths(Node destination, Set<Link> visitedLinks) {
+        if (destination == this) {
+            return Arrays.asList(Path.of());
+        }
+
+        return neighbours
+                .stream()
+                .filter(neighbour -> !visitedLinks.contains(neighbour))
+                .flatMap(neighbour -> neighbour.paths(destination, copyAndNeighbour(visitedLinks, neighbour)).stream())
+                .collect(Collectors.toList());
+    }
+
+    private Set<Link> copyAndNeighbour(Set<Link> visitedLinks, Link neighbour) {
+        Set<Link> visitedLinksCopy = new HashSet<>(visitedLinks);
+        visitedLinksCopy.add(neighbour);
+        return visitedLinksCopy;
+    }
+
+    @Override
+    public String toString() {
+        return "Node{" +
+                "label='" + label + '\'' +
+                '}';
     }
 }

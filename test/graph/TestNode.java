@@ -4,6 +4,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestNode {
@@ -47,14 +48,14 @@ public class TestNode {
 
     @Test
     public void hopCount() {
-        assertEquals(0, B.hopCount(G));
+        assertThrows(IllegalArgumentException.class, () -> B.hopCount(G));
         assertEquals(1, B.hopCount(A));
         assertEquals(3, C.hopCount(F));
     }
 
     @Test
     public void cost() {
-        assertEquals(0d, B.cost(G), DELTA);
+        assertThrows(IllegalArgumentException.class, () -> B.cost(G));
         assertEquals(10d, B.cost(A), DELTA);
         assertEquals(7d, C.cost(F), DELTA);
     }

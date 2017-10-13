@@ -36,9 +36,7 @@ public class Node {
 
         return neighbours
                 .stream()
-                .map(neighbour -> neighbour.path(destination, copyAndThis(visitedNodes)))
-                .filter(path -> path.isPresent())
-                .map(path -> path.get())
+                .flatMap(neighbour -> neighbour.path(destination, copyAndThis(visitedNodes)).stream())
                 .min(Comparator.comparingDouble(Path::cost));
     }
 

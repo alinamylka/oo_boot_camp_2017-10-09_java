@@ -21,4 +21,8 @@ public class Path {
     public double cost() {
         return Link.totalCost(nodes);
     }
+
+    public static Path of() {
+        return new Path();
+    }
 }

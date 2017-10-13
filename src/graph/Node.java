@@ -33,7 +33,7 @@ public class Node {
 
     Optional<Path> path(Node destination, Set<Node> visitedNodes, ToDoubleFunction<Path> strategy) {
         if (destination == this) {
-            return Optional.of(new Path());
+            return Optional.of(Path.of());
         }
 
         if (visitedNodes.contains(this)) {

@@ -25,7 +25,7 @@ public class Node {
         return this.path(destination, noVisitedNodes());
     }
 
-    public Optional<Path> path(Node destination, Set<Node> visitedNodes) {
+    Optional<Path> path(Node destination, Set<Node> visitedNodes) {
         if (destination == this) {
             return Optional.of(new Path());
         }

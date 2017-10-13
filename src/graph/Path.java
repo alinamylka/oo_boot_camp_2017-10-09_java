@@ -10,7 +10,7 @@ public class Path {
         this.nodes = new LinkedList<>();
     }
 
-    public void add(Link node) {
+    public void prepend(Link node) {
         this.nodes.push(node);
     }
 

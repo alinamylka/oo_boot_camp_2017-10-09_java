@@ -16,7 +16,7 @@ public class Link {
 
     public Optional<Path> path(Node destination, Set<Node> visitedNodes) {
         Optional<Path> path = other.path(destination, visitedNodes, Path::cost);
-        path.ifPresent(p -> p.add(this));
+        path.ifPresent(p -> p.prepend(this));
         return path;
     }
 

@@ -26,30 +26,17 @@ public class Node {
     }
 
     public boolean canReach(Node destination) {
-        return this.path(destination, noVisitedNodes(), Path::cost).isPresent();
+        return path(destination).isPresent();
     }
 
 
     public Optional<Path> path(Node destination) {
-        return this.path(destination, Path::cost);
+        return path(destination, Path::cost);
     }
 
     Optional<Path> path(Node destination, ToDoubleFunction<Path> strategy) {
-        return this.path(destination, noVisitedNodes(), strategy);
-    }
-
-    Optional<Path> path(Node destination, Set<Node> visitedNodes, ToDoubleFunction<Path> strategy) {
-        if (destination == this) {
-            return Optional.of(Path.of());
-        }
-
-        if (visitedNodes.contains(this)) {
-            return Optional.empty();
-        }
-
-        return neighbours
+        return paths(destination, noVisitedLinks())
                 .stream()
-                .flatMap(neighbour -> neighbour.path(destination, copyAndThis(visitedNodes)).stream())
                 .min(Comparator.comparingDouble(strategy));
     }
 
@@ -61,22 +48,13 @@ public class Node {
 
 
     public double cost(Node destination) {
-        return path(destination, Path::cost)
+        return path(destination)
                 .map(Path::cost)
                 .orElseThrow(() -> new IllegalArgumentException("Destination is not reachable"));
     }
 
-    private Set<Node> copyAndThis(Set<Node> visitedNodes) {
-        visitedNodes.add(this);
-        return new HashSet<>(visitedNodes);
-    }
-
-    private Set<Node> noVisitedNodes() {
-        return new HashSet<>();
-    }
-
     public List<Path> paths(Node destination) {
-        return paths(destination, new HashSet<>());
+        return paths(destination, noVisitedLinks());
     }
 
     List<Path> paths(Node destination, Set<Link> visitedLinks) {
@@ -95,6 +73,10 @@ public class Node {
         Set<Link> visitedLinksCopy = new HashSet<>(visitedLinks);
         visitedLinksCopy.add(neighbour);
         return visitedLinksCopy;
+    }
+
+    private HashSet<Link> noVisitedLinks() {
+        return new HashSet<>();
     }
 
     @Override

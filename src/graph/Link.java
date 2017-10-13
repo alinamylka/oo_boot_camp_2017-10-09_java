@@ -3,6 +3,7 @@ package graph;
 import java.util.List;
 import java.util.Set;
 
+// understands relations between neighbours
 public class Link {
     private Node other;
     private double cost;

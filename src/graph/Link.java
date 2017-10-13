@@ -1,7 +1,7 @@
 package graph;
 
 import java.util.LinkedList;
-import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 // understands relations between neighbours
@@ -14,10 +14,10 @@ public class Link {
         this.cost = cost;
     }
 
-    public List<Path> paths(Node destination, Set<Node> visitedNodes) {
-        List<Path> paths = other.paths(destination, visitedNodes);
-        paths.forEach(path -> path.add(this));
-        return paths;
+    public Optional<Path> path(Node destination, Set<Node> visitedNodes) {
+        Optional<Path> path = other.path(destination, visitedNodes);
+        path.ifPresent(p -> p.add(this));
+        return path;
     }
 
     @Override

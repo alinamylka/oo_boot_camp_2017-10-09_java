@@ -3,7 +3,8 @@ package graph;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TestNode {
     private final static Node A, B, C, D, E, F, G;
@@ -35,20 +36,13 @@ public class TestNode {
         assertFalse(A.canReach(B));
         assertFalse(B.canReach(G));
     }
-    @Test
-    public void paths() {
-        assertEquals(1, B.paths(F).size());
-        assertEquals(2, B.paths(D).size());
-        assertEquals(3, B.paths(E).size());
-        assertEquals(0, B.paths(G).size());
-    }
 
     @Test
     public void path() {
-        assertEquals(1, B.path(F).hopCount());
-        assertEquals(2, B.path(D).hopCount());
-        assertEquals(2, B.path(E).hopCount());
-        assertEquals(0, B.path(G).hopCount());
+        assertEquals(1, B.path(F).get().hopCount());
+        assertEquals(2, B.path(D).get().hopCount());
+        assertEquals(2, B.path(E).get().hopCount());
+        assertFalse(B.path(G).isPresent());
     }
 
     @Test

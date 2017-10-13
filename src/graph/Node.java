@@ -1,14 +1,11 @@
 package graph;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
-import java.util.stream.Collectors;
 
 // understands neighbours
 public class Node {
@@ -21,46 +18,38 @@ public class Node {
     }
 
     public boolean canReach(Node destination) {
-        return this.paths(destination, noVisitedNodes()).size() > 0;
+        return this.path(destination, noVisitedNodes()).isPresent();
     }
 
-    public Path path(Node destination) {
-        return this.paths(destination, noVisitedNodes())
-                .stream()
-                .min(Comparator.comparingDouble(path -> path.cost()))
-                .get();
+    public Optional<Path> path(Node destination) {
+        return this.path(destination, noVisitedNodes());
     }
 
-    public List<Path> paths(Node destination) {
-        return this.paths(destination, noVisitedNodes());
-    }
-
-    public List<Path> paths(Node destination, Set<Node> visitedNodes) {
+    public Optional<Path> path(Node destination, Set<Node> visitedNodes) {
         if (destination == this) {
-            return Arrays.asList(new Path());
+            return Optional.of(new Path());
         }
 
         if (visitedNodes.contains(this)) {
-            return Collections.emptyList();
+            return Optional.empty();
         }
 
         return neighbours
                 .stream()
-                .flatMap(neighbour -> neighbour.paths(destination, copyAndThis(visitedNodes)).stream())
-                .collect(Collectors.toList());
+                .map(neighbour -> neighbour.path(destination, copyAndThis(visitedNodes)))
+                .filter(path -> path.isPresent())
+                .map(path -> path.get())
+                .min(Comparator.comparingDouble(Path::cost));
     }
 
     public int hopCount(Node destination) {
-        Optional<Path> path = path(destination, Comparator.comparingInt(Path::hopCount));
+        Optional<Path> path = path(destination);
         return path.isPresent() ? path.get().hopCount() : 0;
     }
 
-    private Optional<Path> path(Node destination, Comparator<Path> comparator) {
-        return this.paths(destination).stream().min(comparator);
-    }
 
     public double cost(Node destination) {
-        Optional<Path> path = path(destination, Comparator.comparingDouble(Path::cost));
+        Optional<Path> path = path(destination);
         return path.isPresent() ? path.get().cost() : 0;
     }
 

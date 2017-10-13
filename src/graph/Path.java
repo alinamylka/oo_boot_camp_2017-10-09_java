@@ -3,7 +3,7 @@ package graph;
 import java.util.LinkedList;
 
 public class Path {
-    LinkedList<Link> nodes;
+    private final LinkedList<Link> nodes;
 
     public Path() {
         this.nodes = new LinkedList<>();

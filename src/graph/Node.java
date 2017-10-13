@@ -23,6 +23,13 @@ public class Node {
         return this.paths(destination, noVisitedNodes()).size() > 0;
     }
 
+    public Path path(Node destination) {
+        return this.paths(destination, noVisitedNodes())
+                .stream()
+                .min(Comparator.comparingDouble(path -> path.cost()))
+                .get();
+    }
+
     public List<Path> paths(Node destination) {
         return this.paths(destination, noVisitedNodes());
     }

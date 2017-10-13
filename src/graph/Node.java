@@ -42,13 +42,13 @@ public class Node {
 
     public int hopCount(Node destination) {
         Optional<Path> path = path(destination);
-        return path.map(Path::hopCount).orElse(0);
+        return path.map(Path::hopCount).orElseThrow(IllegalArgumentException::new);
     }
 
 
     public double cost(Node destination) {
         Optional<Path> path = path(destination);
-        return path.map(Path::cost).orElse(0.0);
+        return path.map(Path::cost).orElseThrow(IllegalArgumentException::new);
     }
 
     private Set<Node> copyAndThis(Set<Node> visitedNodes) {

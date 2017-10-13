@@ -44,6 +44,14 @@ public class TestNode {
     }
 
     @Test
+    public void path() {
+        assertEquals(1, B.path(F).hopCount());
+        assertEquals(2, B.path(D).hopCount());
+        assertEquals(2, B.path(E).hopCount());
+        assertEquals(0, B.path(G).hopCount());
+    }
+
+    @Test
     public void hopCount() {
         assertEquals(0, B.hopCount(G));
         assertEquals(1, B.hopCount(A));
